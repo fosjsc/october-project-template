@@ -17,6 +17,7 @@
         "fos/oc-manual-plugin": "dev-dev",
         "fos/support-plugin": "dev-dev",
         "fos/agile-plugin": "dev-dev",
+        "fos/crm-plugin": "dev-dev",
         "fos/passport-plugin": "dev-dev"
     },
     "require-dev": {
@@ -101,6 +102,10 @@
         "fos/passport-plugin": {
             "type": "path",
             "url": "plugins/fos/passport"
+        },
+        "fos/crm-plugin": {
+            "type": "path",
+            "url": "plugins/fos/crm"
         }
     }
 }
