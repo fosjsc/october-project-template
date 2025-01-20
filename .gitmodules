@@ -1,36 +1,36 @@
 [submodule "laradock"]
 	path = laradock
 	url = git@github.com:fosjsc/laradock-october.git
-[submodule "agile-plugin"]
+[submodule "plugins/fos/agile"]
 	path = plugins/fos/agile
 	url = git@github.com:fosjsc/agile.git
-[submodule "crm-plugin"]
+[submodule "plugins/fos/crm"]
 	path = plugins/fos/crm
 	url = git@github.com:fosjsc/crm.git
-[submodule "erp-plugin"]
+[submodule "plugins/fos/erp"]
 	path = plugins/fos/erp
 	url = git@github.com:fosjsc/erp.git
-[submodule "foundation-plugin"]
+[submodule "plugins/fos/foundation"]
 	path = plugins/fos/foundation
 	url = git@github.com:fosjsc/foundation.git
-[submodule "hrm-plugin"]
+[submodule "plugins/fos/hrm"]
 	path = plugins/fos/hrm
 	url = git@github.com:fosjsc/hrm.git
-[submodule "oc-manual-plugin"]
+[submodule "plugins/fos/manual"]
 	path = plugins/fos/manual
 	url = git@github.com:fosjsc/manual.git
-[submodule "notify-plugin"]
+[submodule "plugins/fos/notify"]
 	path = plugins/fos/notify
 	url = git@github.com:fosjsc/notify.git
-[submodule "passport-plugin"]
+[submodule "plugins/fos/passport"]
 	path = plugins/fos/passport
 	url = git@github.com:fosjsc/passport.git
-[submodule "support-plugin"]
+[submodule "plugins/fos/support"]
 	path = plugins/fos/support
 	url = git@github.com:fosjsc/support.git
-[submodule "workflow-plugin"]
+[submodule "plugins/fos/workflow"]
 	path = plugins/fos/workflow
 	url = git@github.com:fosjsc/workflow.git
-[submodule "theme-hdsc"]
+[submodule "themes/hdsc"]
 	path = themes/hdsc
 	url = git@github.com:silver-arrow-software/theme-hdsc.git
