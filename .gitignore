@@ -29,5 +29,8 @@ nbproject
 rr
 .rr.yaml
 
-modules
-plugins
+/modules
+/plugins
+/themes
+/public
+/laradock
