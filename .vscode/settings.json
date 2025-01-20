@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.htm": "html"
+    },
+    "cSpell.words": [
+        "datepicker",
+        "employeeshift",
+        "Kanban",
+        "Queueable",
+        "Twilio",
+        "workingscheduler"
+    ]
+}
