@@ -1,7 +1,4 @@
 {
-    "files.associations": {
-        "*.htm": "html"
-    },
     "cSpell.words": [
         "datepicker",
         "employeeshift",
@@ -9,5 +6,10 @@
         "Queueable",
         "Twilio",
         "workingscheduler"
-    ]
+    ],
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/.node_modules": true,
+        "**/vendor": true
+    }
 }
