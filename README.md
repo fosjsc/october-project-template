@@ -23,6 +23,6 @@
 
 5. Enter the Workspace container, to execute commands like (Artisan, Composer, PHPUnit, Gulp, ...)
 
-    - `docker compose exec --user=laradock workspace bash`
+    - `docker compose -f docker-compose.dev.yml exec -u laradock workspace bash`
 
 6. Follow october installation steps in workspace container. Access web at `http://<project name>.test`
