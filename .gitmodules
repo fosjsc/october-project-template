@@ -1,6 +1,7 @@
 [submodule "laradock"]
 	path = laradock
 	url = git@github.com:fosjsc/laradock-october.git
+	branch = fdcim
 [submodule "plugins/fos/agile"]
 	path = plugins/fos/agile
 	url = git@github.com:fosjsc/agile.git
