@@ -18,7 +18,9 @@
         "fos/support-plugin": "dev-dev",
         "fos/agile-plugin": "dev-dev",
         "fos/crm-plugin": "dev-dev",
-        "fos/passport-plugin": "dev-dev"
+        "fos/passport-plugin": "dev-dev",
+        "fos/fcmas-plugin": "dev-dev",
+        "fos/fdcim-plugin": "dev-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0",
@@ -106,6 +108,14 @@
         "fos/crm-plugin": {
             "type": "path",
             "url": "plugins/fos/crm"
+        },
+        "fos/fcmas-plugin": {
+            "type": "path",
+            "url": "plugins/fos/fcmas"
+        },
+        "fos/fdcim-plugin": {
+            "type": "path",
+            "url": "plugins/fos/fdcim"
         }
     }
 }
