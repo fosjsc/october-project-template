@@ -88,6 +88,11 @@ Copy the example Nginx configuration file:
 cp nginx/sites/octobercms.conf.example octobercms.conf
 ```
 
+
+> [!NOTE]
+> Configuration will use port `80` and `443` as default.
+> Override your port in `octobercms.conf` if you need to.
+
 ---
 
 ## 7️⃣ Start Docker Containers
