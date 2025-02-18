@@ -1,16 +1,12 @@
-@import "../theme/boot";
-
 .page-components {
-    //
-    // TODO list
-    //
+    /* TODO list */
     .panel {
         margin-bottom: 27px;
         background-color: #fff;
     }
 
     .panel.panel-default {
-        border: 2px solid @brand-accent;
+        border: 2px solid var(--bs-brand-accent);
         overflow: hidden;
         margin-top: 40px;
         border-radius: 9px;
@@ -36,7 +32,7 @@
                     left: 0;
                     width: 24px;
                     height: 24px;
-                    background: url('@{assets-url}/images/icons/icon-todo.png') no-repeat 0 0;
+                    background: url('../../images/icons/icon-todo.png') no-repeat 0 0;
                     background-size: 24px 24px !important;
                 }
             }
@@ -64,7 +60,7 @@
                 border: none;
                 outline: none;
                 box-shadow: none;
-                color: @text-color;
+                color: var(--bs-body-color);
                 padding-left: 20px;
                 padding-right: 45px;
 
@@ -75,7 +71,7 @@
                     right: 9px;
                     width: 23px;
                     height: 23px;
-                    background: url('@{assets-url}/images/icons/icon-keyboard-return.png') no-repeat 0 0;
+                    background: url('../../images/icons/icon-keyboard-return.png') no-repeat 0 0;
                     background-size: 23px 23px !important;
                 }
             }
@@ -94,7 +90,13 @@
                 }
 
                 button {
-                    .text-hide();
+                    /* Text hide */
+                    font: 0/0 a;
+                    color: transparent;
+                    text-shadow: none;
+                    background-color: transparent;
+                    border: 0;
+
                     position: absolute;
                     left: 15px;
                     top: 16px;
@@ -131,9 +133,18 @@
             margin-bottom: 40px;
         }
 
-        // Decorations
+        /* Decorations */
+        .explanation-decoration-1,
+        .explanation-decoration-2 {
+            content: '';
+            border-radius: 100%;
+            background-color: #F4F7F8;
+            display: block;
+            position: absolute;
+            z-index: -1;
+        }
+
         .explanation-decoration-1 {
-            .decoration-circle();
             background-color: #fff;
             width: 321px;
             height: 321px;
@@ -143,7 +154,6 @@
         }
 
         .explanation-decoration-2 {
-            .decoration-circle();
             background-color: #fff;
             width: 380px;
             height: 380px;
