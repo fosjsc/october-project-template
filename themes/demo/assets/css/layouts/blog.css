@@ -1,9 +1,4 @@
-@import "../theme/boot";
-
-//
-// Blog Layout Stylesheet
-//
-
+/* Blog Layout StyleSheet */
 body.layout-blog {
     .sidebar-search {
         padding-bottom: 40px;

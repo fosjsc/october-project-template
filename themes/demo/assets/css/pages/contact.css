@@ -1,5 +1,3 @@
-@import "../theme/boot";
-
 .page-contact {
     .contactform {
         text-align: center;
@@ -25,9 +23,18 @@
             margin-bottom: 40px;
         }
 
-        // Decorations
+        /* Decorations */
+        .contactform-decoration-1,
+        .contactform-decoration-2 {
+            content: '';
+            border-radius: 100%;
+            background-color: #F4F7F8;
+            display: block;
+            position: absolute;
+            z-index: -1;
+        }
+
         .contactform-decoration-1 {
-            .decoration-circle();
             background-color: #fff;
             width: 321px;
             height: 321px;
@@ -37,7 +44,6 @@
         }
 
         .contactform-decoration-2 {
-            .decoration-circle();
             background-color: #fff;
             width: 380px;
             height: 380px;

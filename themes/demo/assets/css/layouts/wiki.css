@@ -1,9 +1,4 @@
-@import "../theme/boot";
-
-//
-// Wiki Layout Stylesheet
-//
-
+/* Wiki Layout Stylesheet */
 body.layout-wiki {
     .sidebar-search {
         padding-bottom: 40px;

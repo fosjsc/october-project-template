@@ -1,13 +1,6 @@
-//
-// Common Styles
-//
-
-// BS vars
-:root {
-    --bs-body-line-height: 1.7;
-    --bs-body-color: #343F52;
-}
-
+/*
+ * Common Styles
+ */
 a {
     color: #3097d1;
     text-decoration: none;
@@ -58,7 +51,7 @@ code {
     border-radius: 4px;
 }
 
-// Disable collapse animation
+/* Disable collapse animation */
 .collapsing {
     transition: none;
 }
