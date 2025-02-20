@@ -85,7 +85,7 @@ cd laradock
 Copy the example Nginx configuration file:
 
 ```bash
-cp nginx/sites/octobercms.conf.example octobercms.conf
+cp nginx/sites/octobercms.conf.example nginx/sites/octobercms.conf
 ```
 
 
