@@ -95,6 +95,8 @@ Copy the example Nginx configuration file:
 cp nginx/sites/octobercms.conf.example nginx/sites/octobercms.conf
 cp nginx/sites/minio.conf.example nginx/sites/minio.conf
 cp nginx/sites/minio-console.conf.example nginx/sites/minio-console.conf
+cp nginx/sites/fcollector.conf.example nginx/sites/fcollector.conf
+cp nginx/sites/opensearch.conf.example nginx/sites/opensearch.conf
 ```
 
 > [!NOTE]
