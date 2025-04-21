@@ -246,7 +246,7 @@
     'unlink_name' => 'Unlink :name',
   ],
   'reorder' => [
-    'default_title' => 'Xắp xếp các bản ghi',
+    'default_title' => 'Sắp xếp các bản ghi',
     'no_records' => 'Không có bản ghi nào để sắp xếp.',
   ],
   'model' => [

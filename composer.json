@@ -50,7 +50,8 @@
     "config": {
         "preferred-install": "dist",
         "allow-plugins": {
-            "composer/installers": true
+            "composer/installers": true,
+            "php-http/discovery": true
         }
     },
     "autoload": {

@@ -208,4 +208,5 @@ return [
 
     'middleware_group' => 'web',
 
+    'vue_dashboard' => true,
 ];
