@@ -20,6 +20,7 @@
         "fos/agile-plugin": "*",
         "fos/crm-plugin": "*",
         "fos/passport-plugin": "*",
+        "fos/mrp-plugin": "*",
         "fos/fcmas-plugin": "*",
         "fos/fdcim-plugin": "*"
     },
@@ -110,6 +111,10 @@
         "fos/crm-plugin": {
             "type": "path",
             "url": "plugins/fos/crm"
+        },
+        "fos/mrp-plugin": {
+            "type": "path",
+            "url": "plugins/fos/mrp"
         },
         "fos/fcmas-plugin": {
             "type": "path",
