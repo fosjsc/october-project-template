@@ -34,3 +34,6 @@
 [submodule "themes/hdsc"]
 	path = themes/hdsc
 	url = git@github.com:silver-arrow-software/theme-hdsc.git
+[submodule "plugins/fos/mrp"]
+	path = plugins/fos/mrp
+	url = git@github.com:fosjsc/mrp.git
