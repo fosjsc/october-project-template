@@ -37,3 +37,6 @@
 [submodule "plugins/fos/mrp"]
 	path = plugins/fos/mrp
 	url = git@github.com:fosjsc/mrp.git
+[submodule "plugins/fos/chat"]
+	path = plugins/fos/chat
+	url = git@github.com:fosjsc/chat.git
