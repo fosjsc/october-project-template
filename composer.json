@@ -22,7 +22,10 @@
         "fos/passport-plugin": "*",
         "fos/mrp-plugin": "*",
         "fos/fcmas-plugin": "*",
-        "fos/fdcim-plugin": "*"
+        "fos/fdcim-plugin": "*",
+        "fos/chat-plugin": "*",
+        "nevadskiy/laravel-tree": "^0.6.1",
+        "kalnoy/nestedset": "^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0",
@@ -123,6 +126,10 @@
         "fos/fdcim-plugin": {
             "type": "path",
             "url": "plugins/fos/fdcim"
+        },
+        "fos/chat-plugin": {
+            "type": "path",
+            "url": "plugins/fos/chat"
         }
     }
 }
