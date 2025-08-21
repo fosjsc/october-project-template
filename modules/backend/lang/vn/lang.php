@@ -261,9 +261,6 @@
   'warnings' => [
     'tips' => 'Hướng dẫn cấu hình hệ thống',
     'tips_description' => 'Một số điều bạn cần chú ý để cấu hình hệ thống đúng cách.',
-    'permissions' => 'PHP không có quyền ghi trong thư mục :name hoặc các thư mục con của nó. Vui lòng kiểm tra lại quyền ghi cho thư mục này.',
-    'extension' => 'PHP extension :name chưa được cài đặt. Vui lòng cài đặt extension này từ thư viện và kích hoạt nó.',
-    'plugin_missing' => 'Plugin :name cần phải cài đặt. Vui lòng cài đặt plugin này.',
   ],
   'editor' => [],
   'tooltips' => [],

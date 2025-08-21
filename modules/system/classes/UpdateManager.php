@@ -295,7 +295,7 @@ class UpdateManager
      */
     public function getMigrationTableName(): string
     {
-        return Config::get('database.migrations', 'migrations');
+        return Config::get('database.migrations.table', 'migrations');
     }
 
     /**

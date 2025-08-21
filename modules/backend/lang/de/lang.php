@@ -278,10 +278,6 @@
   'warnings' => [
     'tips' => 'System Konfigurations Tipps',
     'tips_description' => 'Es gibt Probleme, welche Sie beachten müssen, um das System korrekt zu konfigurieren.',
-    'permissions' => 'Verzeichnis :name oder ein Unterverzeichnis kann nicht von PHP beschrieben werden. Bitte setzen Sie die korrekten Rechte für den Webserver in diesem Verzeichnis.',
-    'extension' => 'Die PHP Erweiterung :name ist nicht installiert. Bitte installieren Sie diese Library und aktivieren Sie die Erweiterung.',
-    'plugin_missing' => 'Das Plugin :name hat eine Abhängigkeit die nicht installiert ist. Bitte installieren Sie alle benötigten Plugins.',
-    'debug' => 'Der Debug-Modus ist aktiviert. Dies wird für Produktionsinstallationen nicht empfohlen.',
     'decompileBackendAssets' => 'Assets im Backend sind derzeit dekompiliert. Dies wird für Produktionsinstallationen nicht empfohlen.',
   ],
   'editor' => [

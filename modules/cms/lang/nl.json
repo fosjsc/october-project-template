@@ -33,7 +33,7 @@
   "By :name": "Door :name",
   "The theme ':name' is not found.": "Het thema ':name' is niet gevonden.",
   "Manage the front-end theme and customization options.": "Bekijk de lijst met geïnstalleerde thema's en selecteer een beschikbaar thema.",
-  "Frontend Theme": "Frontend thema",
+  "Site Theme": "Frontend thema",
   "Properties": "Eigenschappen",
   "Publish": "Publiceren",
   "Advanced": "Geavanceerd",

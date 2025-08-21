@@ -6,7 +6,7 @@
   "Maintenance mode will display the maintenance page to visitors who are not signed in to the back-end area.": "Vedlikeholdsmodus vil vise vedlikehodsmodussiden til besøkende som ikke er logget inn.",
   "The theme ':name' is not found.": "Tema ':name' ble ikke funnet.",
   "Manage the front-end theme and customization options.": "Forhåndsvis en liste over installerte temaer og velg et aktivt tema.",
-  "Frontend Theme": "Frontend tema",
+  "Site Theme": "Frontend tema",
   "Properties": "Egenskaper",
   "Name": "Navn",
   "New theme name": "Temanavn",

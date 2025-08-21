@@ -288,10 +288,6 @@
   'warnings' => [
     'tips' => 'Konfiguracja Systemu - Porady',
     'tips_description' => 'Istnieją pewne problemy, na które należy zwrócić uwagę, aby skonfigurować sytem poprawnie.',
-    'permissions' => 'PHP nie może zapisać danych w katalogu :name lub jego podkatalogach. Prosimy o przydzielenie odpowiednich uprawnień na serwerze.',
-    'extension' => 'Rozszerzenie PHP :name nie jest zainstalowane. Prosimy o instalację i aktywację rozszerzenia.',
-    'plugin_missing' => 'Plugin :name jest wymagany, ale nie został zainstalowany.',
-    'debug' => 'Tryb debugowania jest włączony. To nie jest zalecane dla środowisk produkcyjnych.',
     'decompileBackendAssets' => 'Assety w Backendzie są zdekompilowane. To nie jest zalecane dla środowisk produkcyjnych.',
   ],
   'editor' => [],

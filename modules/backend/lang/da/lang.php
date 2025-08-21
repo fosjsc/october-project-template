@@ -233,8 +233,6 @@
   'warnings' => [
     'tips' => 'Systemkonfigurations-tips',
     'tips_description' => 'Der er problemer du skal være opmærksom på for at konfigurre systemet ordenligt.',
-    'permissions' => 'Mappe :name eller dens undermapper, er ikke skrivbare for PHP. Konfigurer venligst webserverens rettigheder for denne mappe.',
-    'extension' => 'PHP extensionen :name er ikke installeret. Installer og aktiver venligst denne extension.',
   ],
   'editor' => [],
   'tooltips' => [],

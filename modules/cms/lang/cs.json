@@ -33,7 +33,7 @@
   "By :name": "Vytvořil :name",
   "The theme ':name' is not found.": "Téma ':name' nebylo nalezeno.",
   "Manage the front-end theme and customization options.": "Náhledy instalovaných témat a výběr aktivního téma.",
-  "Frontend Theme": "Témata vzhledu",
+  "Site Theme": "Témata vzhledu",
   "Properties": "Parametry",
   "Publish": "Publikovat",
   "Advanced": "Pokročilý",

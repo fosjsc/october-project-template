@@ -82,8 +82,8 @@
   "Create Admins": "Vytvoriť administrátorov",
   "Moderate Admins": "Moderovať administrátorov",
   "Manage account suspension and ban admin accounts": "Spravujte pozastavenie účtu a zablokujte účty správcu",
-  "Manage Roles": "Spravovať roly",
-  "Manage Groups": "Spravovať skupiny",
+  "Role Permissions": "Spravovať roly",
+  "Team Groups": "Spravovať skupiny",
   "Manage Other Admins": "Spravovať ostatných administrátorov",
   "Allow users to reset passwords and update emails.": "Umožňuje obnovenie hesiel a aktualizáciu e-mailov",
   "Delete Admins": "Odstrániť administrátorov",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Správa administrátorov, skupín a oprávnení.",
   "Define permissions for administrators based on their role.": "Define permissions for administrators based on their role.",
   "Add administrators to groups used for notifications and features.": "Add administrators to groups used for notifications and features.",
-  "Customize Backend": "Nastavenia administrácie",
+  "Branding & Appearance": "Nastavenia administrácie",
   "Customize the administration area such as name, colors and logo.": "Nastavte si mano, použité farby a logo v administrácií.",
   "Editor Settings": "Nastavenia editora kódu",
   "Change the global editor preferences.": "Upraviť globálne nastavenia editora, napríklad veľkosť písma a farebnú schému.",
@@ -346,5 +346,8 @@
   "Show Ignored Columns": "Show Ignored Columns",
   "Auto Match Columns": "Auto Match Columns",
   "File not found": "File not found",
-  "There was no data supplied to export": "There was no data supplied to export"
+  "There was no data supplied to export": "There was no data supplied to export",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP rozšírenie :name nie je nainštalované. Prosím nainštalujte túto knižnicu a aktivujte rozšírenie.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "Plugin :name je vyžadovaný ale nie je nainštalovaný. Prosím nainštaujte tento plugin.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Do adresára :name alebo jeho podadresárov sa nedá zapisovať z PHP. Prosím nastavte správne oprávnenia tomuto adresáru."
 }

@@ -33,7 +33,7 @@
   "By :name": "Par :name",
   "The theme ':name' is not found.": "Le thème \":name\" n’a pas été trouvé.",
   "Manage the front-end theme and customization options.": "Aperçu des thèmes installés et sélection du thème actif.",
-  "Frontend Theme": "Thème frontal",
+  "Site Theme": "Thème frontal",
   "Properties": "Propriétés",
   "Publish": "Publier",
   "Advanced": "Avancé",

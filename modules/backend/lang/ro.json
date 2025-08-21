@@ -82,8 +82,8 @@
   "Create Admins": "Creați administratori",
   "Moderate Admins": "Administratori moderati",
   "Manage account suspension and ban admin accounts": "Gestionați suspendarea contului și interziceți conturile de administrator",
-  "Manage Roles": "Gestionați rolurile",
-  "Manage Groups": "Grupuri",
+  "Role Permissions": "Gestionați rolurile",
+  "Team Groups": "Grupuri",
   "Manage Other Admins": "Gestionați alți administratori",
   "Allow users to reset passwords and update emails.": "Permite resetarea parolelor și actualizarea e-mailurilor",
   "Delete Admins": "Ștergeți administratorii",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Gestionare administratori, grupuri si permisiuni.",
   "Define permissions for administrators based on their role.": "Definește permisiuni pentru administratori în funcție de rolul lor.",
   "Add administrators to groups used for notifications and features.": "Adăugați administratori la grupurile utilizate pentru notificări și funcționalități.",
-  "Customize Backend": "Personalizează Panou de Administrare",
+  "Branding & Appearance": "Personalizează Panou de Administrare",
   "Customize the administration area such as name, colors and logo.": "Personalizați zona de administrare(ex: numele, culorile și logo-ul).",
   "Editor Settings": "Preferinte Editor Cod",
   "Change the global editor preferences.": "Personalizati preferintele editorului de cod, preferinte precum dimensiunea fontului si culorile folosite.",
@@ -346,5 +346,7 @@
   "Show Ignored Columns": "Show Ignored Columns",
   "Auto Match Columns": "Auto Match Columns",
   "File not found": "File not found",
-  "There was no data supplied to export": "There was no data supplied to export"
+  "There was no data supplied to export": "There was no data supplied to export",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Libraria PHP :name nu este instalata. Va rugam sa instalati aceasta librarie si apoi sa activati extensia.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Directorul :name si subdirectoarele sale nu au permisiuni de scriere pentru PHP. Va rugam sa setati permisiunile corespunzatoare pentru acest director."
 }

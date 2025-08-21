@@ -33,7 +33,7 @@
   "By :name": "Autor: :name",
   "The theme ':name' is not found.": "Teemat ':name' ei leitud.",
   "Manage the front-end theme and customization options.": "Vaata paigaldatud teemasid ja vali endale sobiv.",
-  "Frontend Theme": "Kodulehe teema",
+  "Site Theme": "Kodulehe teema",
   "Properties": "Seaded",
   "Publish": "Avalda",
   "Advanced": "Täiustatud",

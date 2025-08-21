@@ -320,12 +320,6 @@
   'warnings' => [
     'tips' => 'Astuces de configuration du système',
     'tips_description' => 'Il y a des éléments à prendre en compte pour configurer le système correctement.',
-    'permissions' => 'PHP ne peut pas écrire dans le répertoire :name et ses sous-dossiers. Veuillez modifier les permissions en écriture du serveur web pour ce répertoire.',
-    'extension' => 'L’extension PHP :name n’est pas installée. Veuillez installer la librairie et activer l’extension.',
-    'plugin_missing' => 'Le plugin :name est une dépendance mais n\'est pas installé. Veuillez installer le plugin.',
-    'debug' => 'Le mode débug est activé. Ceci n’est pas recommandé pour les applications en production.',
-    'backend_uri' => 'l’URL pour l’administration :name est trop générique. Veuillez choisir quelque chose de plus unique.',
-    'backend_login' => 'Un compte avec un identifiant générique :name a été trouvé. Veuillez renommer ce compte administrateur.',
   ],
   'editor' => [
     'toolbar_buttons_presets' => [

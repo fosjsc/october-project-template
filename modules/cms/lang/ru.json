@@ -33,7 +33,7 @@
   "By :name": "Создано :name",
   "The theme ':name' is not found.": "Тема ':name' не найдена.",
   "Manage the front-end theme and customization options.": "Управление темами и настройками кастомизации.",
-  "Frontend Theme": "Фронтенд темы",
+  "Site Theme": "Фронтенд темы",
   "Properties": "Свойства",
   "Publish": "Публикация",
   "Advanced": "Дополнительно",

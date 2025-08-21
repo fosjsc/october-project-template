@@ -82,8 +82,8 @@
   "Create Admins": "Administratoren erstellen",
   "Moderate Admins": "Moderierte Administratoren",
   "Manage account suspension and ban admin accounts": "Verwalten Sie die Kontosperrung und sperren Sie Administratorkonten",
-  "Manage Roles": "Rollen verwalten",
-  "Manage Groups": "Gruppen",
+  "Role Permissions": "Rollen verwalten",
+  "Team Groups": "Gruppen",
   "Manage Other Admins": "Andere Administratoren verwalten",
   "Allow users to reset passwords and update emails.": "Ermöglicht das Zurücksetzen von Passwörtern und das Aktualisieren von E-Mails",
   "Delete Admins": "Administratoren löschen",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Backend-Benutzer, Administratoren, Gruppen und Zugriffsrechte verwalten.",
   "Define permissions for administrators based on their role.": "Berechtigungen für Administratoren basierend auf ihrer Rolle definieren.",
   "Add administrators to groups used for notifications and features.": "Administratoren in Gruppen organisieren.",
-  "Customize Backend": "Backend anpassen",
+  "Branding & Appearance": "Backend anpassen",
   "Customize the administration area such as name, colors and logo.": "Passe den Admin-Bereich an - z.B. Name, Farben und Logo.",
   "Editor Settings": "Editor-Einstellungen",
   "Change the global editor preferences.": "Verwalten der Code-Editor-Einstellungen.",
@@ -346,5 +346,9 @@
   "Show Ignored Columns": "Zeige ignorierte Spalten",
   "Auto Match Columns": "Spalten automatisch zuordnen",
   "File not found": "Datei nicht gefunden",
-  "There was no data supplied to export": "Es sind keine Daten zum Exportieren vorhanden"
+  "There was no data supplied to export": "Es sind keine Daten zum Exportieren vorhanden",
+  "Debug mode is enabled. This is not recommended for production installations.": "Der Debug-Modus ist aktiviert. Dies wird für Produktionsinstallationen nicht empfohlen.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Die PHP Erweiterung :name ist nicht installiert. Bitte installieren Sie diese Library und aktivieren Sie die Erweiterung.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "Das Plugin :name hat eine Abhängigkeit die nicht installiert ist. Bitte installieren Sie alle benötigten Plugins.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Verzeichnis :name oder ein Unterverzeichnis kann nicht von PHP beschrieben werden. Bitte setzen Sie die korrekten Rechte für den Webserver in diesem Verzeichnis."
 }

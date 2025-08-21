@@ -82,8 +82,8 @@
   "Create Admins": "Ustvari skrbnike",
   "Moderate Admins": "Upravljaj z administratorji",
   "Manage account suspension and ban admin accounts": "Upravljaj z blokado računa in onemogoči skrbniške račune",
-  "Manage Roles": "Upravljanje z vlogami",
-  "Manage Groups": "Upravljanje s skupinami",
+  "Role Permissions": "Upravljanje z vlogami",
+  "Team Groups": "Upravljanje s skupinami",
   "Manage Other Admins": "Upravljanje drugih skrbnikov",
   "Allow users to reset passwords and update emails.": "Omogoča ponastavitev gesel in posodabljanje e-pošte",
   "Delete Admins": "Izbriši skrbnike",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Upravljanje z administratorji, skupinami in dovoljenji.",
   "Define permissions for administrators based on their role.": "Define permissions for administrators based on their role.",
   "Add administrators to groups used for notifications and features.": "Add administrators to groups used for notifications and features.",
-  "Customize Backend": "Prilagoditev administracije",
+  "Branding & Appearance": "Prilagoditev administracije",
   "Customize the administration area such as name, colors and logo.": "Prilagoditev okolja administracije, kot so npr. ime, barve in logotip.",
   "Editor Settings": "Nastavitve urejevalnika",
   "Change the global editor preferences.": "Splošne nastavitve urejevalnika, kot npr. velikost pisave in barvna shema.",
@@ -346,5 +346,9 @@
   "Show Ignored Columns": "Show Ignored Columns",
   "Auto Match Columns": "Auto Match Columns",
   "File not found": "File not found",
-  "There was no data supplied to export": "There was no data supplied to export"
+  "There was no data supplied to export": "There was no data supplied to export",
+  "Debug mode is enabled. This is not recommended for production installations.": "Način za odpravljanje napak je omogočen. Ta način ni priporočljiv za produkcijsko okolje.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP razširitev (extension) :name ni nameščena. Prosimo, namestite ustrezno knjižnico in aktivirajte razširitev.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "Za delovanje je potreben vtičnik :name, vendar ni nameščen. Prosimo, namestite ta vtičnik.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "PHP ne more pisati v mapo :name in njene podmape. Prosimo, nastavite spletnemu strežniku ustrezna dovoljenja za to mapo."
 }

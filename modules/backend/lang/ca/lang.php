@@ -264,9 +264,6 @@
   'warnings' => [
     'tips' => 'Consells de configuració del sistema',
     'tips_description' => 'Hi ha problemes que has d\'atendre per configurar el sistema correctament.',
-    'permissions' => 'El directori :name o un dels seus subdirectoris no pot ser escrit per PHP. Si us plau assigna els permisos corresponents pel servidor web en aquest directori.',
-    'extension' => 'L\'extensió :name no està instal·lada. Si us plau instal·la aquesta llibreria i activa l\'extensió.',
-    'plugin_missing' => 'El plugin :name és una dependència però no està instal·lat. Si us plau instal·la aquest plugin.',
   ],
   'editor' => [],
   'tooltips' => [],

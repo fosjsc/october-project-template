@@ -33,7 +33,7 @@
   "By :name": ":name ile filtrele",
   "The theme ':name' is not found.": "':name' isimli tema bulunamadı.",
   "Manage the front-end theme and customization options.": "Yüklü temalar listesini önizleyebilir, bir tema seçip aktifleştirebilirsiniz.",
-  "Frontend Theme": "Temalar",
+  "Site Theme": "Temalar",
   "Properties": "Özellikler",
   "Publish": "Yayınla",
   "Advanced": "Gelişmiş",

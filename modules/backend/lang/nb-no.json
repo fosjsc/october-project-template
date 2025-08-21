@@ -145,8 +145,8 @@
   "Preview the Website": "Forhåndsvis nettsiden",
   "Administrators": "Administratorer",
   "Manage back-end administrator users, groups and permissions.": "Administrer backend-administratorer, grupper og tilganger.",
-  "Manage Groups": "Grupper",
-  "Customize Backend": "Tilpass backend",
+  "Team Groups": "Grupper",
+  "Branding & Appearance": "Tilpass backend",
   "Customize the administration area such as name, colors and logo.": "Tilpass administratorområdet, for eksempel navn, farger og logo.",
   "Editor Settings": "Teksteditor-innstillinger",
   "Change the global editor preferences.": "Endre teksteditor-innstillingene dine, for eksemplem tekststørrelse og fargevalg.",
@@ -183,5 +183,7 @@
   "Show Ignored Columns": "Vis ignorerte kolonner",
   "Auto Match Columns": "Auto-match kolonner",
   "File not found": "Filen ikke funnet",
-  "There was no data supplied to export": "Ingen data å eksportere"
+  "There was no data supplied to export": "Ingen data å eksportere",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP-extensionen :name er ikke installert..",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Mappen :name eller dens undermapper kan ikke skrives på av PHP. Vennligst sjekk skrivetilganger på serveren."
 }

@@ -82,8 +82,8 @@
   "Create Admins": "Δημιουργία διαχειριστών",
   "Moderate Admins": "Μέτριοι Διαχειριστές",
   "Manage account suspension and ban admin accounts": "Διαχείριση αναστολής λογαριασμού και αποκλεισμός λογαριασμών διαχειριστή",
-  "Manage Roles": "Διαχείριση ρόλων",
-  "Manage Groups": "Διαχείρηση Ομάδων",
+  "Role Permissions": "Διαχείριση ρόλων",
+  "Team Groups": "Διαχείρηση Ομάδων",
   "Manage Other Admins": "Διαχείριση άλλων διαχειριστών",
   "Allow users to reset passwords and update emails.": "Επιτρέπει την επαναφορά κωδικών πρόσβασης και την ενημέρωση email",
   "Delete Admins": "Διαγραφή διαχειριστών",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": "Η εγγραφή της φόρμας με ID :id δεν βρέθηκε.",
   "Preview the Website": "Προεπισκόπηση ιστοσελίδας",
   "Manage back-end administrator users, groups and permissions.": "Διευθέτηση των διαχειριστών, των ομάδων και των δικαιωμάτων του back-end",
-  "Customize Backend": "Προσαρμογή του back-end",
+  "Branding & Appearance": "Προσαρμογή του back-end",
   "Customize the administration area such as name, colors and logo.": "Προσαρμόστε την περιοχή διαχείρισης όπως το όνομα, τα χρώματα και το λογότυπο.",
   "Editor Settings": "Editor settings",
   "Change the global editor preferences.": "Customize the global editor preferences, such as font size and color scheme.",
@@ -325,5 +325,7 @@
   "Show Ignored Columns": "Εμφάνιση αγνοούμενων στηλών",
   "Auto Match Columns": "Αυτόματή αντιστοίχιση στηλών",
   "File not found": "Το αρχείο δεν βρέθηκε",
-  "There was no data supplied to export": "Δεν υπάρχουν δεδομένα για σταλούν για εξαγωγή"
+  "There was no data supplied to export": "Δεν υπάρχουν δεδομένα για σταλούν για εξαγωγή",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Η επέκταση :name της PHP δεν έχει εγκατασταθεί. Παρακαλούμε εγκαταστήστε την βιβλιοθήκη και ενεργοποιήστε την επέκταση.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Ο φάκελος :name ή οι υποφάκελοι του δεν έχουν δικαίωμα εγγραφής για την PHP. Παρακαλούμε ρυθμίστε τα κατάλληλα δικαιώματα στον webserver για αυτό τον καταλογο."
 }

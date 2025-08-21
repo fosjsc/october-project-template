@@ -82,8 +82,8 @@
   "Create Admins": "관리자 만들기",
   "Moderate Admins": "보통 관리자",
   "Manage account suspension and ban admin accounts": "계정 정지 관리 및 관리자 계정 금지",
-  "Manage Roles": "역할 관리",
-  "Manage Groups": "그룹 관리",
+  "Role Permissions": "역할 관리",
+  "Team Groups": "그룹 관리",
   "Manage Other Admins": "다른 관리자 관리",
   "Allow users to reset passwords and update emails.": "사용자가 비밀번호를 재설정하고 이메일을 업데이트하도록 허용합니다.",
   "Delete Admins": "관리자 삭제",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": ":id 아이디의 Form 레코드를 찾을 수 없습니다.",
   "Preview the Website": "웹사이트 미리보기",
   "Manage back-end administrator users, groups and permissions.": "백엔드 관리, 사용자,그룹 및 권한 관리.",
-  "Customize Backend": "백엔드 설정변경",
+  "Branding & Appearance": "백엔드 설정변경",
   "Customize the administration area such as name, colors and logo.": "앱 이름이나 색, 로고 등의 시스템 설정을 변경합니다.",
   "Editor Settings": "에디터 설정",
   "Change the global editor preferences.": "폰트 사이즈나 컬러 스키마등의 전역 에디터의 설정.",
@@ -325,5 +325,8 @@
   "Show Ignored Columns": "무시한 열들 표시",
   "Auto Match Columns": "자동 일치 열",
   "File not found": "파일을 찾을 수 없습니다",
-  "There was no data supplied to export": "내보내기 위한 데이터가 없습니다"
+  "There was no data supplied to export": "내보내기 위한 데이터가 없습니다",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "\":name\" PHP 익스텐션이 설치되어있지 않습니다. 설치후 활성화해주세요.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": ":name 플러그인에 의존성이 해결되지 않았습니다. 이 플러그인을 설치해주세요.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "\":name\" 디렉토리 또는 서브디렉토리는 PHP에서 쓸 수 없습니다. 이 디렉토리의 퍼미션을 설정해주세요."
 }

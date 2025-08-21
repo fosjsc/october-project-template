@@ -82,8 +82,8 @@
   "Create Admins": "Adminok Létrehozása",
   "Moderate Admins": "Adminok Moderálása",
   "Manage account suspension and ban admin accounts": "Fiókfelfüggesztés kezelése és adminisztrátori fiókok kitiltása",
-  "Manage Roles": "Szerepkörök Menedzselése",
-  "Manage Groups": "Csoportok Menedzselése",
+  "Role Permissions": "Szerepkörök Menedzselése",
+  "Team Groups": "Csoportok Menedzselése",
   "Manage Other Admins": "Más Adminok Kezelése",
   "Allow users to reset passwords and update emails.": "Lehetővé teszi a jelszavak visszaállítását és az e-mail címek frissítését.",
   "Delete Admins": "Adminok Törlése",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Felhasználók, jogosultságok, szerepkörök és csoportok kezelése.",
   "Define permissions for administrators based on their role.": "Adminisztrátorok jogosultságainak meghatározása szerepük alapján.",
   "Add administrators to groups used for notifications and features.": "Adminisztrátorok csoportokba rendezése az értesítésekhez és funkciókhoz.",
-  "Customize Backend": "Admin Felület Testreszabása",
+  "Branding & Appearance": "Admin Felület Testreszabása",
   "Customize the administration area such as name, colors and logo.": "Az admin felület nevének, színeinek, logójának, navigációjának testreszabása.",
   "Editor Settings": "Szövegszerkesztő",
   "Change the global editor preferences.": "A megjelenésének és működésének testreszabása.",
@@ -346,5 +346,9 @@
   "Show Ignored Columns": "Mutasd a Kihagyott Oszlopokat",
   "Auto Match Columns": "Oszlopok Automatikus Egyeztetése",
   "File not found": "A fájl nem található",
-  "There was no data supplied to export": "Nem lett megadva adat az exportáláshoz"
+  "There was no data supplied to export": "Nem lett megadva adat az exportáláshoz",
+  "Debug mode is enabled. This is not recommended for production installations.": "A hibakeresési mód engedélyezve van. Ez nem ajánlott éles weboldal esetén.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "A(z) :name PHP kiterjesztés nincs telepítve. Telepítse ezt a függvénytárat és aktiválja a kiterjesztést.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "A(z) :name bővítményre szükség van, de nincs telepítve. Kérjük telepítse ezt a bővítményt.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "A(z) :name könyvtár vagy alkönyvtárai a PHP számára nem írhatóak. Adjon megfelelő engedélyeket a kiszolgálónak erre a könyvtárra."
 }

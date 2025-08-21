@@ -82,8 +82,8 @@
   "Create Admins": "Utwórz administratorów",
   "Moderate Admins": "Zarządzaj administratorami",
   "Manage account suspension and ban admin accounts": "Zarządzaj zawieszeniem konta i blokuj konta administratora",
-  "Manage Roles": "Zarządzaj rolami",
-  "Manage Groups": "Grupy",
+  "Role Permissions": "Zarządzaj rolami",
+  "Team Groups": "Grupy",
   "Manage Other Admins": "Zarządzaj innymi kontami administratorów",
   "Allow users to reset passwords and update emails.": "Umożliwia resetowanie haseł i aktualizowanie e-maili",
   "Delete Admins": "Usuń administratorów",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Zarządzaj administratorami, użytkownikami, grupami i uprawnieniami.",
   "Define permissions for administrators based on their role.": "Zdefiniuj uprawnienia dla administratorów na podstawie ich ról.",
   "Add administrators to groups used for notifications and features.": "Dodaj administratorów do grup używanych do powiadomień i funkcji",
-  "Customize Backend": "Personalizuj panel administracyjny",
+  "Branding & Appearance": "Personalizuj panel administracyjny",
   "Customize the administration area such as name, colors and logo.": "Personalizuj panel administracyjny, kolory, logo.",
   "Editor Settings": "Ustawienia edytora kodu",
   "Change the global editor preferences.": "Personalizuj ustawienia edytora kodu, takie jak wielkość czcionki oraz kolorostyka.",
@@ -346,5 +346,9 @@
   "Show Ignored Columns": "Pokaż ignorowane kolumny",
   "Auto Match Columns": "Auto-dopasowanie kolumn",
   "File not found": "Nie znaleziono pliku",
-  "There was no data supplied to export": "Nie podano żadnych danych do eksportu."
+  "There was no data supplied to export": "Nie podano żadnych danych do eksportu.",
+  "Debug mode is enabled. This is not recommended for production installations.": "Tryb debugowania jest włączony. To nie jest zalecane dla środowisk produkcyjnych.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Rozszerzenie PHP :name nie jest zainstalowane. Prosimy o instalację i aktywację rozszerzenia.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "Plugin :name jest wymagany, ale nie został zainstalowany.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "PHP nie może zapisać danych w katalogu :name lub jego podkatalogach. Prosimy o przydzielenie odpowiednich uprawnień na serwerze."
 }

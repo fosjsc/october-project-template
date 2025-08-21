@@ -82,8 +82,8 @@
   "Create Admins": "Стварыць адміністратараў",
   "Moderate Admins": "Умераныя адміністратары",
   "Manage account suspension and ban admin accounts": "Кіруйце прыпыненнем уліковых запісаў і забаронай уліковых запісаў адміністратара",
-  "Manage Roles": "Кіраванне ролямі",
-  "Manage Groups": "Кіраванне групамі",
+  "Role Permissions": "Кіраванне ролямі",
+  "Team Groups": "Кіраванне групамі",
   "Manage Other Admins": "Кіраванне іншымі адміністратарамі",
   "Allow users to reset passwords and update emails.": "Дазваляе скідаць паролі і абнавіць электронную пошту",
   "Delete Admins": "Выдаліць адміністратараў",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": "Немагчыма знайсці запіс формы з ідэнтыфікатарам :id",
   "Preview the Website": "Праглядзець сайт",
   "Manage back-end administrator users, groups and permissions.": "Кіраванне карыстальнікамі панэлі кіравання, групамі і дазволамі",
-  "Customize Backend": "Налады адлюстравання панэлі кіравання",
+  "Branding & Appearance": "Налады адлюстравання панэлі кіравання",
   "Customize the administration area such as name, colors and logo.": "Налады панэлі кіравання, такія як колер фона, лагатып, апісанні",
   "Editor Settings": "Налады рэдактара",
   "Change the global editor preferences.": "Налада глабальных наладаў рэдактара, такіх як памер шрыфта і каляровая схема",
@@ -325,5 +325,7 @@
   "Show Ignored Columns": "Паказаць слупкі якія ігнаруюцца",
   "Auto Match Columns": "Аўтаматычныя суадносіны слупкоў",
   "File not found": "Файл не знойдзены",
-  "There was no data supplied to export": "Няма дадзеных для экспарту"
+  "There was no data supplied to export": "Няма дадзеных для экспарту",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Пашыранне PHP \":name\" не ўсталявана. Калі ласка, ўсталюце пашырэнне і актывуйце яго",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "PHP не можа пісаць у каталог \":name\" альбо ў яго падкаталогі. Калі ласка, вызначце патрэбныя дазволы ў наладах сервера для гэтага каталога"
 }

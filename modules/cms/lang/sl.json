@@ -33,7 +33,7 @@
   "By :name": "Avtor :name",
   "The theme ':name' is not found.": "Teme ':name' ni bilo mogoče najti.",
   "Manage the front-end theme and customization options.": "Upravljanje s temo spletne strani in možnostmi prilagoditve.",
-  "Frontend Theme": "Tema spletne strani",
+  "Site Theme": "Tema spletne strani",
   "Properties": "Lastnosti",
   "Publish": "Objavi",
   "Advanced": "Napredno",

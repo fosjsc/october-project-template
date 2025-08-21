@@ -82,8 +82,8 @@
   "Create Admins": "Създаване на администратори",
   "Moderate Admins": "Умерени администратори",
   "Manage account suspension and ban admin accounts": "Управлявайте спирането на акаунти и забраняването на администраторски акаунти",
-  "Manage Roles": "Управление на ролите",
-  "Manage Groups": "Групи",
+  "Role Permissions": "Управление на ролите",
+  "Team Groups": "Групи",
   "Manage Other Admins": "Управление на други администратори",
   "Allow users to reset passwords and update emails.": "Позволява нулиране на пароли и актуализиране на имейли",
   "Delete Admins": "Изтриване на администратори",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Управление на админ-панелана: администратори, групи и разрешения.",
   "Define permissions for administrators based on their role.": "Определете разрешенията за администраторите въз основа на тяхната роля.",
   "Add administrators to groups used for notifications and features.": "Добавете администратори към групите, използвани за известия и функции.",
-  "Customize Backend": "Персонализирайте администраторския-панел",
+  "Branding & Appearance": "Персонализирайте администраторския-панел",
   "Customize the administration area such as name, colors and logo.": "Персонализирайте администраторския-панел, като име, цветове и лого.",
   "Editor Settings": "Редактор Код предпочитания и настройки",
   "Change the global editor preferences.": "Персонализирайте вашите предпочитания на редактора на код, като например размера на шрифта и цветова схема.",
@@ -346,5 +346,7 @@
   "Show Ignored Columns": "Покажи игнорираните колони",
   "Auto Match Columns": "Автоматично обединяване на колони",
   "File not found": "Файлът не е намерен",
-  "There was no data supplied to export": "Няма предоставени данни за изнасяне"
+  "There was no data supplied to export": "Няма предоставени данни за изнасяне",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Разширението на PHP :name не е инсталирано. Моля инсталирайте тази библиотека и активирайте разширението.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Директория :name или нейните поддиректории не е достъпна за писане от PHP (Няма права). Моля, задайте съответните разрешения за уеб сървъра на тази директория (папка)."
 }

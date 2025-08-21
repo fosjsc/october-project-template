@@ -319,10 +319,6 @@
   'warnings' => [
     'tips' => 'Beállítási tippek',
     'tips_description' => 'Az alábbi dolgokra figyeljen oda a rendszer megfelelő működése érdekében.',
-    'permissions' => 'A(z) :name könyvtár vagy alkönyvtárai a PHP számára nem írhatóak. Adjon megfelelő engedélyeket a kiszolgálónak erre a könyvtárra.',
-    'extension' => 'A(z) :name PHP kiterjesztés nincs telepítve. Telepítse ezt a függvénytárat és aktiválja a kiterjesztést.',
-    'plugin_missing' => 'A(z) :name bővítményre szükség van, de nincs telepítve. Kérjük telepítse ezt a bővítményt.',
-    'debug' => 'A hibakeresési mód engedélyezve van. Ez nem ajánlott éles weboldal esetén.',
   ],
   'editor' => [
     'toolbar_buttons_presets' => [

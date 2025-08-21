@@ -33,7 +33,7 @@
   "By :name": "توسط :name",
   "The theme ':name' is not found.": "یافتن قالبی با نام  ':name یافت نشد.'",
   "Manage the front-end theme and customization options.": "پیش نمایش قالب های موجود و انتخاب قالب فعال.",
-  "Frontend Theme": "قالب نمایشی",
+  "Site Theme": "قالب نمایشی",
   "Properties": "خصوصیات",
   "Publish": "انتشار",
   "Advanced": "پیشرفته",

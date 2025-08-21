@@ -82,8 +82,8 @@
   "Create Admins": "Crea amministratori",
   "Moderate Admins": "Amministratori moderati",
   "Manage account suspension and ban admin accounts": "Gestisci la sospensione dell'account ed escludi gli account amministratore",
-  "Manage Roles": "Gestisci ruoli",
-  "Manage Groups": "Gruppi",
+  "Role Permissions": "Gestisci ruoli",
+  "Team Groups": "Gruppi",
   "Manage Other Admins": "Gestisci altri amministratori",
   "Allow users to reset passwords and update emails.": "Consente di reimpostare le password e aggiornare le e-mail",
   "Delete Admins": "Elimina gli amministratori",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": "Nessun record con ID :id è stato trovato.",
   "Preview the Website": "Anteprima del sito web",
   "Manage back-end administrator users, groups and permissions.": "Gestisci gli utenti amministratori, i gruppi e le autorizzazioni.",
-  "Customize Backend": "Personalizza pannello di controllo",
+  "Branding & Appearance": "Personalizza pannello di controllo",
   "Customize the administration area such as name, colors and logo.": "Personalizza l'area di amministrazione, come il nome, i colori ed il logo.",
   "Editor Settings": "Preferenze editor di codice",
   "Change the global editor preferences.": "Personalizza le impostazioni dell'editor, come la dimensione del carattere e lo schema di colori.",
@@ -325,5 +325,7 @@
   "Show Ignored Columns": "Visualizza colonne ignorate",
   "Auto Match Columns": "Abbinamento automatico colonne",
   "File not found": "File non trovato",
-  "There was no data supplied to export": "Nessun dato fornito per l'esportazione."
+  "There was no data supplied to export": "Nessun dato fornito per l'esportazione.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "L'estensione di PHP :name non è installata. Installa questa libreria ed attiva l'estensione.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "La cartella :name o le sue sottocartelle non sono scrivibili da PHP. Imposta le corrette autorizzazioni per il server web su questa cartella."
 }

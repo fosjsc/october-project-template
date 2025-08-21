@@ -33,7 +33,7 @@
   "By :name": "By :name",
   "The theme ':name' is not found.": "Motyw ':name' nie został odnaleziony.",
   "Manage the front-end theme and customization options.": "Zobacz listę zainstalowanych motywów i wybierz, który aktywować.",
-  "Frontend Theme": "Motyw strony",
+  "Site Theme": "Motyw strony",
   "Properties": "Właściwości",
   "Publish": "Publish",
   "Advanced": "Advanced",

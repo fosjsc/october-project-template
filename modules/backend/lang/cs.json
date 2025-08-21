@@ -82,8 +82,8 @@
   "Create Admins": "Vytvořit správce",
   "Moderate Admins": "Umírnění správci",
   "Manage account suspension and ban admin accounts": "Spravujte pozastavení účtu a zakažte účty administrátorů",
-  "Manage Roles": "Role",
-  "Manage Groups": "Skupiny",
+  "Role Permissions": "Role",
+  "Team Groups": "Skupiny",
   "Manage Other Admins": "Spravovat ostatní administrátory",
   "Allow users to reset passwords and update emails.": "Umožňuje resetování hesel a aktualizaci e-mailů",
   "Delete Admins": "Smazat správce",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Správa uživatelů administrace, jejich skupin a opravnění.",
   "Define permissions for administrators based on their role.": "Definujte oprávnění správců na základě jejich role.",
   "Add administrators to groups used for notifications and features.": "Přidat administrátory do skupin používaných pro oznámení a funkce.",
-  "Customize Backend": "Nastavení administrace",
+  "Branding & Appearance": "Nastavení administrace",
   "Customize the administration area such as name, colors and logo.": "Nastavte si název, logo a barvy použité v administraci.",
   "Editor Settings": "Nastavení editoru kódu",
   "Change the global editor preferences.": "Nastavení editoru kódu, velikosti písma a barevného schématu.",
@@ -346,5 +346,8 @@
   "Show Ignored Columns": "Zobrazit ignorované sloupce",
   "Auto Match Columns": "Automaticky propojit sloupce",
   "File not found": "Soubor nebyl nalezen",
-  "There was no data supplied to export": "K exportu nebyla nalezena žádná data"
+  "There was no data supplied to export": "K exportu nebyla nalezena žádná data",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP rozšíření :name není nainstalováno. Prosím nainstalujte toto rozšíření a aktivujte ho.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "Plugin :name je vyžadován, ale není nainstalovaný. Prosím nainstalujte tento plugin.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Do adresáře :name nebo jeho podadresářů nelze zapisovat z PHP. Prosím nastavte správná oprávnění."
 }

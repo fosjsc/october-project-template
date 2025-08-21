@@ -82,8 +82,8 @@
   "Create Admins": "管理者を作成する",
   "Moderate Admins": "中程度の管理者",
   "Manage account suspension and ban admin accounts": "アカウントの停止を管理し、管理者アカウントを禁止する",
-  "Manage Roles": "役割の管理",
-  "Manage Groups": "グループ",
+  "Role Permissions": "役割の管理",
+  "Team Groups": "グループ",
   "Manage Other Admins": "他の管理者を管理する",
   "Allow users to reset passwords and update emails.": "パスワードのリセットとメールの更新を許可します",
   "Delete Admins": "管理者を削除",
@@ -285,7 +285,7 @@
   "Form record with an ID of :id could not be found.": "IDが:idのフォームレコードが見つかりません。",
   "Preview the Website": "Webサイトをプレビューする",
   "Manage back-end administrator users, groups and permissions.": "バックエンドの管理ユーザーとグループ、権限の管理。",
-  "Customize Backend": "バックエンドのカスタマイズ",
+  "Branding & Appearance": "バックエンドのカスタマイズ",
   "Customize the administration area such as name, colors and logo.": "システム管理者領域を設定します。例えば、名前や色、ロゴ。",
   "Editor Settings": "エディタ",
   "Change the global editor preferences.": "コードエディタ設定の管理",
@@ -298,5 +298,7 @@
   "Use checkboxes to select columns you want to see in the list. You can change position of columns by dragging them up or down.": "リストの表示したいカラムをチェックボックスで選択してください。カラムの位置は上下にドラッグして変更できます。",
   "Records Per Page": "ページ中のレコード数",
   "Select the number of records per page to display. Please note that high number of records on a single page can reduce performance.": "ページあたりの表示レコード数を選択してください。1ページにたくさん表示するとパフォーマンスに影響があるので留意してください。",
-  "Add Selected": "追加は選択されています"
+  "Add Selected": "追加は選択されています",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP拡張\":name\"はインストールされていません。PHP拡張をインストールして有効にしてください。",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "ディレクトリ\":name\"またはそのサブディレクトリは、PHPから書き込みできません。このディレクトリのパーミッションを設定してください。"
 }

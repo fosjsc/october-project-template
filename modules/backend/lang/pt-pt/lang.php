@@ -288,10 +288,6 @@
   'warnings' => [
     'tips' => 'Dicas de configuração do sistema',
     'tips_description' => 'Há itens que requerem atenção para configurar o sistema corretamente.',
-    'permissions' => 'Diretoria :name ou suas subdiretorias não são graváveis pelo PHP. Por favor, defina permissões de escrita para o servidor nesta diretoria.',
-    'extension' => 'A extensão PHP :name não está instalada. Por favor, instale esta biblioteca para activar a extensão.',
-    'plugin_missing' => 'A extensão :name é uma dependência mas não está instalada. Por favor instale esta extensão.',
-    'debug' => 'O modo de depuração está activo. Isto não é recomendado em abientes de produção.',
     'decompileBackendAssets' => 'Os recursos do backend não estao compilados. Isto não é recomendado em ambientes de produção.',
   ],
   'editor' => [],

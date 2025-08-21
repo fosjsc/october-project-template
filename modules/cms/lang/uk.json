@@ -33,7 +33,7 @@
   "By :name": "Автор :name",
   "The theme ':name' is not found.": "Тема ':name' не знайдена.",
   "Manage the front-end theme and customization options.": "Керування інтерфейсною темою",
-  "Frontend Theme": "Фронтенд теми",
+  "Site Theme": "Фронтенд теми",
   "Properties": "Властивості",
   "Publish": "Publish",
   "Advanced": "Advanced",

@@ -291,10 +291,6 @@
   'warnings' => [
     'tips' => 'Saveti za konfigurisanje sistema',
     'tips_description' => 'Postoje problemi na koje bi trebalo da obratiš pažnju da bi konfigurisao sistem kako treba.',
-    'permissions' => 'PHP ne može pristupiti direktorijumu :name ili njegovim poddirektorijuma zarad upisivanja. Promeni RWX dozvole na serveru za ovaj direktorijum.',
-    'extension' => 'Produžetak za PHP :name nije instaliran. Instaliraj ovu biblioteku i produžetak.',
-    'plugin_missing' => 'Produžetak :name je obavezan ali nije instaliran. Instaliraj ovaj produžetak.',
-    'debug' => 'Uključen je mod za ispravljanje grešaka što nije preporučljivo.',
     'decompileBackendAssets' => 'Sredstva u pozadinskom sistemu trenutno nisu kompajlovana što nije preporučljivo.',
   ],
   'editor' => [

@@ -260,9 +260,6 @@
   'warnings' => [
     'tips' => 'Tipy pro konfiguraci systému',
     'tips_description' => 'Existují problémy, které vyžadují vaši pozornost, aby byl systém správně nakonfigurován.',
-    'permissions' => 'Do adresáře :name nebo jeho podadresářů nelze zapisovat z PHP. Prosím nastavte správná oprávnění.',
-    'extension' => 'PHP rozšíření :name není nainstalováno. Prosím nainstalujte toto rozšíření a aktivujte ho.',
-    'plugin_missing' => 'Plugin :name je vyžadován, ale není nainstalovaný. Prosím nainstalujte tento plugin.',
   ],
   'editor' => [],
   'tooltips' => [],

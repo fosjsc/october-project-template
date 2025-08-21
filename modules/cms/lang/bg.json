@@ -33,7 +33,7 @@
   "By :name": "По име",
   "The theme ':name' is not found.": "Темата ':name' не е намерена.",
   "Manage the front-end theme and customization options.": "Преглед на списъка с инсталирани теми и изберете активна тема.",
-  "Frontend Theme": "Front-end Тема",
+  "Site Theme": "Front-end Тема",
   "Properties": "Свойства",
   "Publish": "Публикувай",
   "Advanced": "Разширено",

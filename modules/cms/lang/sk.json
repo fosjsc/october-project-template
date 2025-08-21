@@ -33,7 +33,7 @@
   "By :name": "Vytvoril :name",
   "The theme ':name' is not found.": "Téma ':name' nebola nájdená.",
   "Manage the front-end theme and customization options.": "Spravujte témy vzhľadu a možnosti prispôsobenia.",
-  "Frontend Theme": "Téma vzhľadu",
+  "Site Theme": "Téma vzhľadu",
   "Properties": "Parametre",
   "Publish": "Publikovať",
   "Advanced": "Pokročilé",

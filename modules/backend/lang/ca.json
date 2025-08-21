@@ -82,8 +82,8 @@
   "Create Admins": "Crear administradors",
   "Moderate Admins": "Administradors moderats",
   "Manage account suspension and ban admin accounts": "Gestioneu la suspensió del compte i prohibeu els comptes d'administrador",
-  "Manage Roles": "Gestionar rols",
-  "Manage Groups": "Gestionar grups",
+  "Role Permissions": "Gestionar rols",
+  "Team Groups": "Gestionar grups",
   "Manage Other Admins": "Gestionar altres administradors",
   "Allow users to reset passwords and update emails.": "Permet restablir contrasenyes i actualitzar correus electrònics",
   "Delete Admins": "Elimina els administradors",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": "El registre de formulari amb la ID :id no s'ha trobat.",
   "Preview the Website": "Previsualitzar el lloc web",
   "Manage back-end administrator users, groups and permissions.": "Gestionar els usuaris administradors del panell, grups i permisos.",
-  "Customize Backend": "Personalitzar el panell d'administració",
+  "Branding & Appearance": "Personalitzar el panell d'administració",
   "Customize the administration area such as name, colors and logo.": "Personalitzar l'aspecte de l'àrea d'administració, com ara el nom, els colors o el logo.",
   "Editor Settings": "Opcions de l'editor",
   "Change the global editor preferences.": "Personalitza les preferències globals de l'editor, com ara el mida de la font i l'esquema de colors.",
@@ -325,5 +325,8 @@
   "Show Ignored Columns": "Mostrar columnes ignorades",
   "Auto Match Columns": "Emparellar columnes automàticament",
   "File not found": "Arxiu no trobat",
-  "There was no data supplied to export": "No hi ha dades per exportar"
+  "There was no data supplied to export": "No hi ha dades per exportar",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "L'extensió :name no està instal·lada. Si us plau instal·la aquesta llibreria i activa l'extensió.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "El plugin :name és una dependència però no està instal·lat. Si us plau instal·la aquest plugin.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "El directori :name o un dels seus subdirectoris no pot ser escrit per PHP. Si us plau assigna els permisos corresponents pel servidor web en aquest directori."
 }

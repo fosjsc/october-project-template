@@ -229,8 +229,6 @@
   'warnings' => [
     'tips' => 'Consejos de configuración del sistema',
     'tips_description' => 'Hay problemas que necesitan de su atención para configurar el sistema correctamente.',
-    'permissions' => 'Directorio :name o los subdirectorios no se puede escribir por PHP. Por favor establecer los permisos correctos para el servidor web en este directorio.',
-    'extension' => 'La extensión PHP :name no está instalada. Por favor instalar esta librería y activar la extensión.',
   ],
   'editor' => [],
   'tooltips' => [],

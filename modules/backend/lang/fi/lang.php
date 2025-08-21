@@ -61,7 +61,6 @@
     'widget_width' => 'Leveys',
     'full_width' => 'täysleveä',
     'manage_widgets' => 'Hallinnoi vimpaimia',
-    'add_widget' => 'Lisää vimpain',
     'widget_inspector_title' => 'Vimpainten konfigurointi',
     'widget_inspector_description' => 'Konfiguroi raporttivimpain',
     'widget_columns_label' => 'Leveys :columns',
@@ -338,12 +337,6 @@
   'warnings' => [
     'tips' => 'Järjestelmän kokoonpanovinkkejä',
     'tips_description' => 'On olemassa ongelmia, joihin sinun on kiinnitettävä huomiota järjestelmän oikein määrittelemiseksi.',
-    'permissions' => 'Hakemisto :name tai sen alihakemistot ei ole PHP:n kirjoitettavissa. Aseta vastaavat oikeudet tälle hakemistolle verkkopalvelimella.',
-    'extension' => 'PHP laajennus :name ei ole asennettuna. Asenna ja aktivoi kyseinen laajennus.',
-    'plugin_missing' => 'Lisäosa :name on riippuvuus, mutta sitä ei ole asennettu. Asenna lisäosa.',
-    'debug' => 'Debug-moodi on valittu. Tätä ei suositella julkaistuihin asennuksiin.',
-    'backend_uri' => 'Ylläpidon URL :name on liian yleinen. Anna jokin omaperäisempi.',
-    'backend_login' => 'Löytyi tili nimeltä :name, joka on liian yleinen. Ole hyvä ja vaihda jokin omaperäisempi nimi.',
   ],
   'editor' => [
     'toolbar_buttons_presets' => [

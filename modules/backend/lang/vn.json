@@ -148,9 +148,9 @@
   "Preview the Website": "Xem trước website",
   "Administrators": "Administrators",
   "Manage back-end administrator users, groups and permissions.": "Quản lý các administrator, nhóm quản trị và quyền truy cập.",
-  "Manage Roles": "Quản lý các Role",
-  "Manage Groups": "Quản lý các nhóm",
-  "Customize Backend": "Tùy chỉnh trang quản trị",
+  "Role Permissions": "Quản lý các Role",
+  "Team Groups": "Quản lý các nhóm",
+  "Branding & Appearance": "Tùy chỉnh trang quản trị",
   "Customize the administration area such as name, colors and logo.": "Tùy chỉnh trang quản trị, ví dụ như chỉnh sửa tên,màu sắc, logo.",
   "Editor Settings": "Cài đặt trình biên tập (Code editor)",
   "Change the global editor preferences.": "Tùy chỉnh trình biên tập (Code editor) cho toàn trang, ví dụ kích thước chữ,màu nền cho trình biên tập.",
@@ -187,5 +187,8 @@
   "Show Ignored Columns": "Hiển thị các cột bị bỏ qua",
   "Auto Match Columns": "Tự động khớp các cột",
   "File not found": "Không tìm thấy file",
-  "There was no data supplied to export": "Không có dữ liệu để xuất ra"
+  "There was no data supplied to export": "Không có dữ liệu để xuất ra",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP extension :name chưa được cài đặt. Vui lòng cài đặt extension này từ thư viện và kích hoạt nó.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "Plugin :name cần phải cài đặt. Vui lòng cài đặt plugin này.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "PHP không có quyền ghi trong thư mục :name hoặc các thư mục con của nó. Vui lòng kiểm tra lại quyền ghi cho thư mục này."
 }

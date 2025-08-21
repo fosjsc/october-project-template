@@ -82,8 +82,8 @@
   "Create Admins": "Добавить админа",
   "Moderate Admins": "Модерировать админа",
   "Manage account suspension and ban admin accounts": "Управляйте блокировками и приостановками учетной записи администратора",
-  "Manage Roles": "Управление ролями",
-  "Manage Groups": "Управление группами",
+  "Role Permissions": "Управление ролями",
+  "Team Groups": "Управление группами",
   "Manage Other Admins": "Управление другими админами",
   "Allow users to reset passwords and update emails.": "Разрешить менять пароли и обновлять электронную почту",
   "Delete Admins": "Удалить админов",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Управление администраторами, создание групп и полномочий.",
   "Define permissions for administrators based on their role.": "Настройте полномочия для администраторов в зависимости от их роли.",
   "Add administrators to groups used for notifications and features.": "Добавьте администраторов в группы используемые для уведомлений и остальных функций.",
-  "Customize Backend": "Персонализация панели управления",
+  "Branding & Appearance": "Персонализация панели управления",
   "Customize the administration area such as name, colors and logo.": "Настройка внешнего вида, названия, цвета и логотип.",
   "Editor Settings": "Настройки WYSIWYG редактора",
   "Change the global editor preferences.": "Изменить глобальные настройки WYSIWYG редактора.",
@@ -346,5 +346,11 @@
   "Show Ignored Columns": "Show Ignored Columns",
   "Auto Match Columns": "Auto Match Columns",
   "File not found": "Файл не найден",
-  "There was no data supplied to export": "There was no data supplied to export"
+  "There was no data supplied to export": "There was no data supplied to export",
+  "Debug mode is enabled. This is not recommended for production installations.": "Включен режим отладки. Не рекомендуется использовать режим отладки для сайта в продакшене.",
+  "The backend URL :name is too generic. Please set to something more unique.": "Адрес \":name\" панели управления слишком простой. Пожалуйста укажите что-нибудь более уникальное.",
+  "An account with a generic login :name was found. Please rename this administrator account.": "Найден аккаунт с логином \":name\". Пожалуйста переименуйте его.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Расширение PHP :name не установлено. Установите эту библиотеку и активируйте расширение.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "Плагин :name имеет зависимость. Установите этот плагин.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Каталог :name или его подкаталоги недоступны для записи. Укажите соответствующие разрешения для веб-сервера."
 }

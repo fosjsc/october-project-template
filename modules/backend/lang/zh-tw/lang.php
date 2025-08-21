@@ -184,8 +184,6 @@
   'warnings' => [
     'tips' => '系統設定技巧',
     'tips_description' => '您需要注意那些issue, 以使系統設定正確',
-    'permissions' => '目錄 :name 或子目錄對PHP不可寫. 請對這個目錄上的webserver設定正確的權限',
-    'extension' => 'PHP外掛 :name 沒安裝. 請安裝這個庫並且啟用外掛',
   ],
   'editor' => [],
   'tooltips' => [],

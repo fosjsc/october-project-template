@@ -14,7 +14,7 @@
   "Enable maintenance mode": "啟用維護模式",
   "The theme ':name' is not found.": "主題 ':name' 沒找到.",
   "Manage the front-end theme and customization options.": "預覽安裝的主題, 選擇一個活動主題.",
-  "Frontend Theme": "前端主題",
+  "Site Theme": "前端主題",
   "Properties": "屬性",
   "Name": "名稱",
   "New theme name": "新主題名稱",

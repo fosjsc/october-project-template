@@ -112,7 +112,7 @@ class ServiceProvider extends ModuleServiceProvider
     {
         return [
             'filters' => [
-                'media' => [\Media\Classes\MediaLibrary::class, 'url'],
+                'media' => [\Media\Classes\MediaLibrary::class, 'url', false],
             ]
         ];
     }

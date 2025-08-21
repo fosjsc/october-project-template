@@ -321,12 +321,6 @@
   'warnings' => [
     'tips' => 'Systeem configuratie tips',
     'tips_description' => 'Er zijn aandachtspunten die actie vereisen.',
-    'permissions' => 'De map :name of de submappen zijn niet schrijfbaar voor PHP. Zet de bijhorende rechten voor de webserver in deze map.',
-    'extension' => 'De PHP extensie :name is niet geïnstalleerd. Installeer deze bibliotheek en activeer de extensie.',
-    'plugin_missing' => 'De plugin :name is een afhankelijkheid maar is niet geïnstalleerd. Installeer deze plugin a.u.b.',
-    'debug' => 'Debug modus is ingeschakeld. Dit wordt niet aanbevolen op een productie-omgeving.',
-    'backend_uri' => 'De URL van de beheeromgeving is te generiek. Kies een unieke naam.',
-    'backend_login' => 'Er is een account met een generieke gebruikersnaam gevonden (:name). Pas de gebruikersnaam aan van dit account.',
   ],
   'editor' => [
     'toolbar_buttons_presets' => [
