@@ -1,11 +1,9 @@
 <?php namespace Backend;
 
 use Backend;
-use System\Classes\MailManager;
 use System\Classes\SettingsManager;
 use Backend\Models\UserRole;
 use Backend\Models\BrandSetting;
-use Backend\Models\Dashboard;
 use October\Rain\Support\ModuleServiceProvider;
 
 /**
@@ -37,13 +35,10 @@ class ServiceProvider extends ModuleServiceProvider
     protected function registerSingletons()
     {
         $this->app->singleton('backend.helper', \Backend\Helpers\Backend::class);
-        $this->app->singleton('backend.menu', \Backend\Classes\NavigationManager::class);
         $this->app->singleton('backend.roles', \Backend\Classes\RoleManager::class);
-        $this->app->singleton('backend.widgets', \Backend\Classes\WidgetManager::class);
-        $this->app->singleton('backend.dashboards', \Backend\Classes\DashboardManager::class);
-        $this->app->singleton('backend.reports', \Backend\Classes\ReportDataSourceManager::class);
-
-        $this->app->singleton('backend.auth', fn () => \Backend\Classes\AuthManager::instance());
+        $this->app->scoped('backend.auth', fn () => \Backend\Classes\AuthManager::instance());
+        $this->app->scoped('backend.menu', \Backend\Classes\NavigationManager::class);
+        $this->app->scoped('backend.widgets', \Backend\Classes\WidgetManager::class);
     }
 
     /**
@@ -53,7 +48,7 @@ class ServiceProvider extends ModuleServiceProvider
     {
         return [
             \Backend\ReportWidgets\Welcome::class => [
-                'label' => 'backend::lang.dashboard.welcome.widget_title_default',
+                'label' => "Welcome",
                 'context' => 'dashboard'
             ],
         ];
@@ -76,16 +71,16 @@ class ServiceProvider extends ModuleServiceProvider
      */
     public function registerNavigation()
     {
-        return [
-            'dashboard' => [
-                'label' => 'backend::lang.dashboard.menu_label',
-                'icon' => 'icon-dashboard',
-                'iconSvg' => 'modules/backend/assets/images/dashboard-icon.svg',
-                'url' => Backend::url('backend'),
-                'permissions' => ['dashboard.*', 'dashboard'],
-                'order' => 10
-            ]
-        ];
+        // return [
+        //     'dashboard' => [
+        //         'label' => "Dashboard",
+        //         'icon' => 'icon-dashboard',
+        //         'iconSvg' => 'modules/backend/assets/images/dashboard-icon.svg',
+        //         'url' => Backend::url('backend'),
+        //         'permissions' => ['dashboard.*', 'dashboard'],
+        //         'order' => 10
+        //     ]
+        // ];
     }
 
     /**
@@ -112,20 +107,6 @@ class ServiceProvider extends ModuleServiceProvider
                 'order' => 300
             ],
 
-            // Dashboard
-            'dashboard' => [
-                'label' => 'Access the Dashboard',
-                'comment' => 'backend::lang.permissions.access_dashboard',
-                'tab' => 'Dashboard',
-                'order' => 600
-            ],
-            'dashboard.manage' => [
-                'label' => 'Manage Dashboards',
-                'comment' => 'backend::lang.permissions.create_edit_dashboards',
-                'tab' => 'Dashboard',
-                'order' => 600
-            ],
-            // ] + Dashboard::getPermissionDefinitions() + [
             // Administrators
             'admins.manage' => [
                 'label' => 'Manage Admins',
@@ -155,13 +136,13 @@ class ServiceProvider extends ModuleServiceProvider
                 'order' => 800
             ],
             'admins.roles' => [
-                'label' => 'Manage Roles',
+                'label' => 'Role Permissions',
                 'comment' => 'Allow users to create new roles and manage roles lower than their highest role.',
                 'tab' => 'Administrators',
                 'order' => 500
             ],
             'admins.groups' => [
-                'label' => 'Manage Groups',
+                'label' => 'Team Groups',
                 'tab' => 'Administrators',
                 'order' => 600
             ],
@@ -234,52 +215,52 @@ class ServiceProvider extends ModuleServiceProvider
     public function registerSettings()
     {
         return [
-            'administrators' => [
-                'label' => "Administrators",
-                'description' => "Manage back-end administrator users, groups and permissions.",
-                'category' => SettingsManager::CATEGORY_TEAM,
-                'icon' => 'icon-text-users',
-                'url' => Backend::url('backend/users'),
-                'permissions' => ['admins.manage'],
-                'order' => 400
-            ],
-            'adminroles' => [
-                'label' => "Manage Roles",
-                'description' => "Define permissions for administrators based on their role.",
-                'category' => SettingsManager::CATEGORY_TEAM,
-                'icon' => 'icon-id-card-1',
-                'url' => Backend::url('backend/userroles'),
-                'permissions' => ['admins.roles'],
-                'order' => 410
-            ],
-            'admingroups' => [
-                'label' => "Manage Groups",
-                'description' => "Add administrators to groups used for notifications and features.",
-                'category' => SettingsManager::CATEGORY_TEAM,
-                'icon' => 'icon-user-group',
-                'url' => Backend::url('backend/usergroups'),
-                'permissions' => ['admins.groups'],
-                'order' => 420
-            ],
             'branding' => [
-                'label' => "Customize Backend",
+                'label' => "Branding & Appearance",
                 'description' => "Customize the administration area such as name, colors and logo.",
-                'category' => SettingsManager::CATEGORY_SYSTEM,
-                'icon' => 'icon-text-paint-brush',
+                'category' => SettingsManager::CATEGORY_BACKEND,
+                'icon' => 'ph ph-terminal-window',
                 'class' => \Backend\Models\BrandSetting::class,
                 'permissions' => ['settings.customize_backend'],
-                'order' => 500,
+                'order' => 400,
                 'keywords' => 'brand style'
             ],
             'editor' => [
                 'label' => "Editor Settings",
                 'description' => "Change the global editor preferences.",
-                'category' => SettingsManager::CATEGORY_SYSTEM,
+                'category' => SettingsManager::CATEGORY_BACKEND,
                 'icon' => 'icon-code',
                 'class' => \Backend\Models\EditorSetting::class,
                 'permissions' => ['settings.editor_settings'],
-                'order' => 500,
+                'order' => 410,
                 'keywords' => 'html code class style'
+            ],
+            'administrators' => [
+                'label' => "Administrators",
+                'description' => "Manage back-end administrator users, groups and permissions.",
+                'category' => SettingsManager::CATEGORY_TEAM,
+                'icon' => 'ph ph-users-three',
+                'url' => Backend::url('backend/users'),
+                'permissions' => ['admins.manage'],
+                'order' => 500
+            ],
+            'adminroles' => [
+                'label' => "Role Permissions",
+                'description' => "Define permissions for administrators based on their role.",
+                'category' => SettingsManager::CATEGORY_TEAM,
+                'icon' => 'icon-id-card-1',
+                'url' => Backend::url('backend/userroles'),
+                'permissions' => ['admins.roles'],
+                'order' => 510
+            ],
+            'admingroups' => [
+                'label' => "Team Groups",
+                'description' => "Add administrators to groups used for notifications and features.",
+                'category' => SettingsManager::CATEGORY_TEAM,
+                'icon' => 'icon-user-group',
+                'url' => Backend::url('backend/usergroups'),
+                'permissions' => ['admins.groups'],
+                'order' => 520
             ],
             'myaccount' => [
                 'label' => "My Account",
@@ -287,7 +268,7 @@ class ServiceProvider extends ModuleServiceProvider
                 'category' => SettingsManager::CATEGORY_MYSETTINGS,
                 'icon' => 'icon-user-account',
                 'url' => Backend::url('backend/users/myaccount'),
-                'order' => 500,
+                'order' => 600,
                 'context' => 'mysettings',
                 'keywords' => "security login"
             ],
@@ -298,7 +279,7 @@ class ServiceProvider extends ModuleServiceProvider
                 'icon' => 'icon-app-window',
                 'url' => Backend::url('backend/preferences'),
                 'permissions' => ['preferences'],
-                'order' => 510,
+                'order' => 610,
                 'context' => 'mysettings'
             ],
             'color_mode' => !BrandSetting::get('show_light_switch') ? null : [
@@ -310,9 +291,10 @@ class ServiceProvider extends ModuleServiceProvider
                 'attributes' => [
                     'data-control' => 'color-mode-switcher',
                     'data-lang-light-mode' => __("Light Mode"),
-                    'data-lang-dark-mode' => __("Dark Mode")
+                    'data-lang-dark-mode' => __("Dark Mode"),
+                    'data-lang-auto-mode' => __("Auto Mode")
                 ],
-                'order' => 520,
+                'order' => 620,
                 'context' => 'mysettings'
             ],
             'access_logs' => [

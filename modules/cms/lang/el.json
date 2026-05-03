@@ -33,7 +33,7 @@
   "By :name": "Από όνομα",
   "The theme ':name' is not found.": "Το θέμα ':name' δεν βρέθηκε.",
   "Manage the front-end theme and customization options.": "Προεπισκόπηση των εγκατεστημένων θεμάτων και επιλογή του ενεργού θέματος.",
-  "Frontend Theme": "Θέμα Front-End",
+  "Site Theme": "Θέμα Front-End",
   "Properties": "Ιδιότητες",
   "Publish": "Δημοσιεύω",
   "Advanced": "Προχωρημένος",

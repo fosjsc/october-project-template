@@ -33,7 +33,7 @@
   "By :name": "Vid namn",
   "The theme ':name' is not found.": "Kunde inte hitta temat ':name'.",
   "Manage the front-end theme and customization options.": "Förhandsgranska listan av installerade teman och välj ett aktivt tema.",
-  "Frontend Theme": "Front-end tema",
+  "Site Theme": "Front-end tema",
   "Properties": "Egenskaper",
   "Publish": "Publicera",
   "Advanced": "Avancerad",

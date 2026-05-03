@@ -245,9 +245,6 @@
   'warnings' => [
     'tips' => 'Näpunäited süsteemi seadistamiseks',
     'tips_description' => 'Süsteemi õigeks seadistamiseks on vaja meeles pidada paari olulist aspekti.',
-    'permissions' => 'PHP-l ei ole õigust kirjutada katallogi :name või selle alamkataloogidesse. Palun paranda kataloogide juurdepääsuõigused serveris.',
-    'extension' => 'PHP laiendus :name ei ole paigaldatud. Süsteemi toimiseks on vajalik selle paigaldamine.',
-    'plugin_missing' => 'Plugin :name on vajalik süsteemi toimimiseks, kuid seda pole paigaldatud. Palun paigalda see plugin.',
   ],
   'editor' => [],
   'tooltips' => [],

@@ -33,7 +33,7 @@
   "By :name": "名前で",
   "The theme ':name' is not found.": "テーマ「:name」が見つかりません。",
   "Manage the front-end theme and customization options.": "インストール済みのテーマのプレビュー一覧とアクティブテーマの選択。",
-  "Frontend Theme": "フロントエンドのテーマ",
+  "Site Theme": "フロントエンドのテーマ",
   "Properties": "プロパティ",
   "Publish": "公開",
   "Advanced": "高度",

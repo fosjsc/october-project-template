@@ -33,7 +33,7 @@
   "By :name": "By :name",
   "The theme ':name' is not found.": "':name' 테마를 찾을 수 없습니다.",
   "Manage the front-end theme and customization options.": "설치된 테마와 활성 테마 목록의 미리보기.",
-  "Frontend Theme": "프론트엔드 테마",
+  "Site Theme": "프론트엔드 테마",
   "Properties": "속성",
   "Publish": "게시",
   "Advanced": "고급의",

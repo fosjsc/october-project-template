@@ -36,7 +36,7 @@ return [
     | - menu_mode: inline, text, tile, collapse, icons, left
     | - color_mode: light, dark, auto
     | - color_palette: default, classic, oxford, console, valentino, punch
-    | - login_background_type: color, wallpaper, october_ai_images
+    | - login_background_type: color, wallpaper, gradient, ai_images
     | - login_background_wallpaper_size: auto, cover
     | - login_image_type: autumn_images, custom
     |
@@ -155,6 +155,20 @@ return [
         'require_nonalpha' => false,
         'expire_days' => false,
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Peer Management
+    |--------------------------------------------------------------------------
+    |
+    | When enabled, admin users can manage other users at the same role level
+    | in addition to their users below their role (direct reports).
+    |
+    | When disabled, users can only manage their direct reports and not peers.
+    |
+    */
+
+    'user_peer_management' => false,
 
     /*
     |--------------------------------------------------------------------------

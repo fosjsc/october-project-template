@@ -20,7 +20,6 @@ use System\Twig\SecurityPolicy as TwigSecurityPolicy;
 use October\Rain\Support\ModuleServiceProvider;
 use Illuminate\Pagination\Paginator;
 use Twig\Environment as TwigEnvironment;
-use System\Classes\SystemReportDataSource;
 
 /**
  * ServiceProvider for System module
@@ -60,8 +59,7 @@ class ServiceProvider extends ModuleServiceProvider
         }
 
         // Backend specific
-        if ($this->app->runningInBackend()) {
-            $this->registerDashboardDatasource();
+        if ($this->app->runningInBackend() || $this->app->runningInOctane()) {
             $this->extendBackendNavigation();
             $this->extendBackendSettings();
         }
@@ -72,6 +70,8 @@ class ServiceProvider extends ModuleServiceProvider
      */
     public function boot()
     {
+        $this->bootOctaneResets();
+
         // Fix UTF8MB4 support for MariaDB < 10.2 and MySQL < 5.7
         $this->applyDatabaseDefaultStringLength();
 
@@ -81,7 +81,7 @@ class ServiceProvider extends ModuleServiceProvider
                 isset($config['driver']) &&
                 $config['driver'] === 'local' &&
                 isset($config['root']) &&
-                ends_with($config['root'], '/storage/app') &&
+                str_ends_with($config['root'], '/storage/app') &&
                 empty($config['url'])
             ) {
                 Config::set("filesystems.disks.$key.url", '/storage/app');
@@ -107,16 +107,17 @@ class ServiceProvider extends ModuleServiceProvider
         $this->app->singleton('system.helper', \System\Helpers\System::class);
         $this->app->singleton('system.manifest', \System\Classes\ManifestCache::class);
         $this->app->singleton('system.preset', \System\Classes\PresetManager::class);
-        $this->app->singleton('system.ui', \System\Classes\UiManager::class);
+        $this->app->singleton('system.ui', \System\Classes\UiFactory::class);
         $this->app->singleton('system.sites', \System\Classes\SiteManager::class);
         $this->app->singleton('system.resizer', \System\Classes\ResizeImages::class);
         $this->app->singleton('system.combiner', \System\Classes\CombineAssets::class);
         $this->app->singleton('system.mailer', \System\Classes\MailManager::class);
-        $this->app->singleton('system.markup', \System\Classes\MarkupManager::class);
-        $this->app->singleton('system.settings', \System\Classes\SettingsManager::class);
         $this->app->singleton('system.updater', \System\Classes\UpdateManager::class);
         $this->app->singleton('system.versions', \System\Classes\VersionManager::class);
         $this->app->singleton('system.plugins', \System\Classes\PluginManager::class);
+        $this->app->singleton('core.translate.attribute', fn() => \System\Models\TranslateAttribute::class);
+        $this->app->scoped('system.markup', \System\Classes\MarkupManager::class);
+        $this->app->scoped('system.settings', \System\Classes\SettingsManager::class);
     }
 
     /**
@@ -127,62 +128,62 @@ class ServiceProvider extends ModuleServiceProvider
         return [
             'functions' => [
                 // Escaped Functions
-                'input' => ['input', true],
-                'post' => ['post', true],
-                'get' => ['get', true],
-                'form_value' => [\Form::class, 'value', true],
+                'input' => 'input',
+                'post' => 'post',
+                'get' => 'get',
+                'form_value' => [\Form::class, 'value'],
 
                 // Raw Functions
-                'link_to' => 'link_to',
-                'link_to_asset' => 'link_to_asset',
-                'link_to_route' => 'link_to_route',
-                'link_to_action' => 'link_to_action',
-                'array_only' => 'array_only',
-                'array_except' => 'array_except',
-                'asset' => 'asset',
-                'action' => 'action',
-                'url' => 'url',
-                'route' => 'route',
-                'secure_url' => 'secure_url',
-                'secure_asset' => 'secure_asset',
-                'html_email' => [\Html::class, 'email'],
-                'html_mailto' => [\Html::class, 'mailto'],
+                'link_to' => ['link_to', false],
+                'link_to_asset' => ['link_to_asset', false],
+                'link_to_route' => ['link_to_route', false],
+                'link_to_action' => ['link_to_action', false],
+                'array_only' => ['array_only', false],
+                'array_except' => ['array_except', false],
+                'asset' => ['asset', false],
+                'action' => ['action', false],
+                'url' => ['url', false],
+                'route' => ['route', false],
+                'secure_url' => ['secure_url', false],
+                'secure_asset' => ['secure_asset', false],
+                'html_email' => [\Html::class, 'email', false],
+                'html_mailto' => [\Html::class, 'mailto', false],
 
                 // Escaped Classes
-                'str_*' => [\Str::class, '*', true],
-                'html_*' => [\Html::class, '*', true],
+                'str_*' => [\Str::class, '*'],
+                'html_*' => [\Html::class, '*'],
 
                 // Raw Classes
-                'url_*' => [\Url::class, '*'],
-                'form_*' => [\Form::class, '*'],
-                'form_macro' => [\Form::class, '__call']
+                'url_*' => [\Url::class, '*', false],
+                'form_*' => [\Form::class, '*', false],
+                'form_macro' => [\Form::class, '__call', false],
             ],
             'filters' => [
                 // Escaped Functions
-                'str_replace' => [fn(...$args) => \Str::replace($args[1] ?? '', $args[2] ?? '', $args[0] ?? ''), true],
-                'str_replace_first' => [fn(...$args) => \Str::replaceFirst($args[1] ?? '', $args[2] ?? '', $args[0] ?? ''), true],
-                'str_replace_last' => [fn(...$args) => \Str::replaceLast($args[1] ?? '', $args[2] ?? '', $args[0] ?? ''), true],
-                'str_replace_array' => [fn(...$args) => \Str::replaceArray($args[1] ?? '', $args[2] ?? [], $args[0] ?? ''), true],
+                'str_replace' => [fn(...$args) => \Str::replace($args[1] ?? '', $args[2] ?? '', $args[0] ?? '')],
+                'str_replace_first' => [fn(...$args) => \Str::replaceFirst($args[1] ?? '', $args[2] ?? '', $args[0] ?? '')],
+                'str_replace_last' => [fn(...$args) => \Str::replaceLast($args[1] ?? '', $args[2] ?? '', $args[0] ?? '')],
+                'str_replace_array' => [fn(...$args) => \Str::replaceArray($args[1] ?? '', $args[2] ?? [], $args[0] ?? '')],
 
                 // Escaped Classes
-                'str_*' => [\Str::class, '*', true],
+                'str_*' => [\Str::class, '*'],
 
                 // Raw Classes
-                'url_*' => [\Url::class, '*'],
-                'html_*' => [\Html::class, '*'],
-                'slug' => [\Str::class, 'slug'],
-                'plural' => [\Str::class, 'plural'],
-                'singular' => [\Str::class, 'singular'],
-                'finish' => [\Str::class, 'finish'],
-                'snake' => [\Str::class, 'snake'],
-                'camel' => [\Str::class, 'camel'],
-                'studly' => [\Str::class, 'studly'],
-                'md' => [\Markdown::class, 'parse'],
-                'md_safe' => [\Markdown::class, 'parseSafe'],
-                'md_clean' => [\Markdown::class, 'parseClean'],
-                'md_indent' => [\Markdown::class, 'parseIndent'],
-                'time_since' => [\System\Helpers\DateTime::class, 'timeSince'],
-                'time_tense' => [\System\Helpers\DateTime::class, 'timeTense'],
+                'url_*' => [\Url::class, '*', false],
+                'html_*' => [\Html::class, '*', false],
+                'slug' => [\Str::class, 'slug', false],
+                'plural' => [\Str::class, 'plural', false],
+                'singular' => [\Str::class, 'singular', false],
+                'finish' => [\Str::class, 'finish', false],
+                'snake' => [\Str::class, 'snake', false],
+                'camel' => [\Str::class, 'camel', false],
+                'studly' => [\Str::class, 'studly', false],
+                'md' => [\Markdown::class, 'parse', false],
+                'md_safe' => [\Markdown::class, 'parseSafe', false],
+                'md_clean' => [\Markdown::class, 'parseClean', false],
+                'md_indent' => [\Markdown::class, 'parseIndent', false],
+                'time_since' => [\System\Helpers\DateTime::class, 'timeSince', false],
+                'time_tense' => [\System\Helpers\DateTime::class, 'timeTense', false],
             ]
         ];
     }
@@ -218,29 +219,8 @@ class ServiceProvider extends ModuleServiceProvider
             \System\Helpers\Cache::clearInternal();
         });
 
-        // Register console commands
-        $this->registerConsoleCommand('october.up', \System\Console\OctoberUp::class);
-        $this->registerConsoleCommand('october.down', \System\Console\OctoberDown::class);
-        $this->registerConsoleCommand('october.migrate', \System\Console\OctoberMigrate::class);
-        $this->registerConsoleCommand('october.update', \System\Console\OctoberUpdate::class);
-        $this->registerConsoleCommand('october.util', \System\Console\OctoberUtil::class);
-        $this->registerConsoleCommand('october.mirror', \System\Console\OctoberMirror::class);
-        $this->registerConsoleCommand('october.fresh', \System\Console\OctoberFresh::class);
-        $this->registerConsoleCommand('october.passwd', \System\Console\OctoberPasswd::class);
-        $this->registerConsoleCommand('october.optimize', \System\Console\OctoberOptimize::class);
-        $this->registerConsoleCommand('october.about', \System\Console\OctoberAbout::class);
-
-        $this->registerConsoleCommand('plugin.install', \System\Console\PluginInstall::class);
-        $this->registerConsoleCommand('plugin.remove', \System\Console\PluginRemove::class);
-        $this->registerConsoleCommand('plugin.disable', \System\Console\PluginDisable::class);
-        $this->registerConsoleCommand('plugin.enable', \System\Console\PluginEnable::class);
-        $this->registerConsoleCommand('plugin.refresh', \System\Console\PluginRefresh::class);
-        $this->registerConsoleCommand('plugin.list', \System\Console\PluginList::class);
-        $this->registerConsoleCommand('plugin.check', \System\Console\PluginCheck::class);
-        $this->registerConsoleCommand('plugin.test', \System\Console\PluginTest::class);
-        $this->registerConsoleCommand('plugin.seed', \System\Console\PluginSeed::class);
-
-        $this->registerConsoleCommand('project.sync', \System\Console\ProjectSync::class);
+        // Auto-discover console commands
+        $this->discoverConsoleCommands('system');
     }
 
     /**
@@ -291,7 +271,7 @@ class ServiceProvider extends ModuleServiceProvider
             TwigExtension::addExtensionToTwig($twig);
             TwigSecurityPolicy::addExtensionToTwig($twig);
 
-            $twig->addTokenParser(new \System\Twig\MailPartialTokenParser);
+            $twig->addTokenParser(new \System\Twig\TokenParser\MailPartialTokenParser);
             return $twig;
         });
     }
@@ -341,19 +321,6 @@ class ServiceProvider extends ModuleServiceProvider
     }
 
     /**
-     * registerDashboardDatasource
-     */
-    protected function registerDashboardDatasource()
-    {
-        $this->callAfterResolving('backend.reports', function($manager) {
-            $manager->registerDataSourceClass(
-                SystemReportDataSource::class,
-                'system::lang.dashboard.report_data_source.data_source_name'
-            );
-        });
-    }
-
-    /**
      * extendBackendNavigation
      */
     protected function extendBackendNavigation()
@@ -385,7 +352,7 @@ class ServiceProvider extends ModuleServiceProvider
     {
         return [
             \System\ReportWidgets\Status::class => [
-                'label' => 'backend::lang.dashboard.status.widget_title_default',
+                'label' => "System status",
                 'context' => 'dashboard'
             ],
         ];
@@ -432,24 +399,24 @@ class ServiceProvider extends ModuleServiceProvider
     {
         return [
             'updates' => [
-                'label' => 'System Updates',
+                'label' => 'Software Updates',
                 'description' => 'Update the system modules and plugins.',
                 'category' => SettingsManager::CATEGORY_SYSTEM,
-                'icon' => 'icon-download-cloud',
+                'icon' => 'ph ph-wrench',
                 'url' => Backend::url('system/updates'),
                 'permissions' => ['general.backend.perform_updates'],
-                'order' => 300
+                'order' => 200
             ],
-            'my_updates' => [
-                'label' => 'System Updates',
-                'description' => 'Update the system modules and plugins.',
-                'category' => SettingsManager::CATEGORY_MYSETTINGS,
-                'icon' => 'icon-components',
-                'url' => Backend::url('system/updates'),
-                'permissions' => ['general.backend.perform_updates'],
-                'order' => 520,
-                'context' => 'mysettings'
-            ],
+            // 'my_updates' => [
+            //     'label' => 'Software Updates',
+            //     'description' => 'Update the system modules and plugins.',
+            //     'category' => SettingsManager::CATEGORY_MYSETTINGS,
+            //     'icon' => 'icon-components',
+            //     'url' => Backend::url('system/updates'),
+            //     'permissions' => ['general.backend.perform_updates'],
+            //     'order' => 520,
+            //     'context' => 'mysettings'
+            // ],
             'sites' => !Site::hasFeature() ? null : [
                 'label' => "Site Definitions",
                 'description' => 'Manage the websites available for this application.',
@@ -457,13 +424,13 @@ class ServiceProvider extends ModuleServiceProvider
                 'icon' => 'icon-globe-site',
                 'url' => Backend::url('system/sites'),
                 'permissions' => ['settings.manage_sites'],
-                'order' => 350
+                'order' => 250
             ],
             'mail_templates' => [
                 'label' => "Mail Templates",
                 'description' => "Modify the mail templates that are sent to users and administrators, manage email layouts.",
                 'category' => SettingsManager::CATEGORY_MAIL,
-                'icon' => 'icon-mail-messages',
+                'icon' => 'ph ph-envelope-simple',
                 'url' => Backend::url('system/mailtemplates'),
                 'permissions' => ['mail.templates'],
                 'order' => 610
@@ -490,7 +457,7 @@ class ServiceProvider extends ModuleServiceProvider
                 'label' => "Event Log",
                 'description' => "View system log messages with their recorded time and details.",
                 'category' => SettingsManager::CATEGORY_LOGS,
-                'icon' => 'icon-text-format-ul',
+                'icon' => 'ph ph-notepad',
                 'url' => Backend::url('system/eventlogs'),
                 'permissions' => ['utilities.logs'],
                 'order' => 900,
@@ -609,6 +576,24 @@ class ServiceProvider extends ModuleServiceProvider
         // Override standard Mailer content with template
         Event::listen('mailer.beforeAddContent', function ($mailer, $message, $view, $data, $raw, $plain) {
             return !MailManager::instance()->addContentFromEvent($message, $view, $plain, $raw, $data);
+        });
+    }
+
+    /**
+     * bootOctaneResets resets singletons when Octane receives a new request.
+     */
+    protected function bootOctaneResets()
+    {
+        if (!class_exists(\Laravel\Octane\Events\RequestReceived::class)) {
+            return;
+        }
+
+        $this->app['events']->listen(\Laravel\Octane\Events\RequestReceived::class, function ($event) {
+            \System\Behaviors\SettingsModel::clearInternalCache();
+            \System\Models\SettingModel::clearInternalCache();
+            \System\Models\Parameter::clearInternalCache();
+            \October\Rain\Auth\Manager::forgetInstance();
+            \Backend\Classes\AuthManager::forgetInstance();
         });
     }
 }

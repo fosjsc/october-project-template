@@ -191,8 +191,6 @@
   'warnings' => [
     'tips' => 'Systemkonfigurationstips',
     'tips_description' => 'Det finns problem som du behöver åtgärda för att konfigurera systemet ordentligt.',
-    'permissions' => 'Katalogen :name eller dess underkataloger är inte skrivbara av PHP. Väligen ändra dess motsvarande behörigheter för web-servern i denna katalogen.',
-    'extension' => 'PHP-tillägget: Namnet är inte installerat. Vänligen installera och aktivera det biblioteket.',
   ],
   'editor' => [],
   'tooltips' => [],

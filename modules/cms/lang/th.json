@@ -33,7 +33,7 @@
   "By :name": "โดย :name",
   "The theme ':name' is not found.": "ไม่พบธีม ':name'",
   "Manage the front-end theme and customization options.": "จัดการธีมหน้าบ้าน และตัวเลือกในการปรับแก้อื่นๆ",
-  "Frontend Theme": "ธีมหน้าบ้าน (Theme)",
+  "Site Theme": "ธีมหน้าบ้าน (Theme)",
   "Properties": "คุณสมบัติ",
   "Publish": "เผยแพร่",
   "Advanced": "ขั้นสูง",

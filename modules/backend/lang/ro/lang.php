@@ -145,8 +145,6 @@
   'warnings' => [
     'tips' => 'Sfaturi pentru configurarea sistemului',
     'tips_description' => 'Exista anumite conditii care necesita atentie pentru a configura sistemul corect.',
-    'permissions' => 'Directorul :name si subdirectoarele sale nu au permisiuni de scriere pentru PHP. Va rugam sa setati permisiunile corespunzatoare pentru acest director.',
-    'extension' => 'Libraria PHP :name nu este instalata. Va rugam sa instalati aceasta librarie si apoi sa activati extensia.',
   ],
   'editor' => [],
   'tooltips' => [],

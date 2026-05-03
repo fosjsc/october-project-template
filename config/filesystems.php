@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('FILESYSTEM_DRIVER', 'local'),
+    'default' => env('FILESYSTEM_DISK', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,8 +32,19 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
+            'root' => storage_path('app/private'),
+            'serve' => true,
             'throw' => false,
+            'report' => false,
+        ],
+
+        'public' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public'),
+            'url' => rtrim(env('APP_URL', ''), '/').'/storage/app/public',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
         ],
 
         // 'uploads' => [
@@ -58,6 +69,7 @@ return [
             'root' => 'uploads',
             'url' => env('AWS_URL') . '/uploads',
             'visibility' => 'public',
+            'report' => false,
         ],
 
         // 'media' => [
@@ -83,6 +95,7 @@ return [
             'url' => env('AWS_URL') . '/media',
             'visibility' => 'public',
             'throw' => false,
+            'report' => false,
         ],
 
         // 'resources' => [
@@ -108,6 +121,7 @@ return [
             'url' => env('AWS_URL') . '/resources',
             'visibility' => 'public',
             'throw' => false,
+            'report' => false,
         ],
 
         's3' => [
@@ -121,8 +135,26 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
             'signatureVersion' => 'v4',
+            'report' => false,
         ],
 
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Symbolic Links
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure the symbolic links that will be created when the
+    | `storage:link` Artisan command is executed. The array keys should be
+    | the locations of the links and the values should be their targets.
+    |
+    | For October CMS, we recommend using the `october:mirror` command instead
+    |
+    */
+
+    'links' => [
+        public_path('storage/app/public') => storage_path('app/public'),
     ],
 
 ];

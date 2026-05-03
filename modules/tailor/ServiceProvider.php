@@ -23,7 +23,6 @@ class ServiceProvider extends ModuleServiceProvider
         $this->registerConsole();
         $this->registerRenamedClasses();
 
-        $this->extendMigrateCommand();
         $this->extendDeferredBindingForContent();
     }
 
@@ -74,10 +73,21 @@ class ServiceProvider extends ModuleServiceProvider
         return [
             // Editor
             'editor.tailor_blueprints' => [
-                'label' => 'Manage Blueprints',
-                'tab' => 'Editor',
+                'label' => "Manage Blueprints",
+                'tab' => "Editor",
                 'roles' => UserRole::CODE_DEVELOPER,
                 'order' => 100
+            ],
+            // Tailor
+            'tailor.entry' => [
+                'label' => "Manage Entries",
+                'tab' => "Tailor",
+                'order' => 900
+            ],
+            'tailor.global' => [
+                'label' => "Manage Globals",
+                'tab' => "Tailor",
+                'order' => 910
             ]
         ] + BlueprintIndexer::instance()->getPermissionDefinitions();
     }
@@ -121,10 +131,7 @@ class ServiceProvider extends ModuleServiceProvider
      */
     protected function registerConsole()
     {
-        $this->registerConsoleCommand('tailor.refresh', \Tailor\Console\TailorRefresh::class);
-        $this->registerConsoleCommand('tailor.migrate', \Tailor\Console\TailorMigrate::class);
-        $this->registerConsoleCommand('tailor.prune', \Tailor\Console\TailorPrune::class);
-        $this->registerConsoleCommand('tailor.propagate', \Tailor\Console\TailorPropagate::class);
+        $this->discoverConsoleCommands('tailor');
     }
 
     /**
@@ -149,17 +156,6 @@ class ServiceProvider extends ModuleServiceProvider
             \Tailor\ContentFields\TagListField::class => 'taglist',
             \Tailor\ContentFields\RecordFinderField::class => 'recordfinder',
         ];
-    }
-
-    /**
-     * extendMigrateCommand to migrate blueprints
-     */
-    public function extendMigrateCommand()
-    {
-        Event::listen('system.updater.migrate', function ($updateManager) {
-            BlueprintIndexer::instance()
-                ->setNotesOutput($updateManager->getNotesOutput())->migrate();
-        });
     }
 
     /**
@@ -188,13 +184,13 @@ class ServiceProvider extends ModuleServiceProvider
         });
 
         Event::listen(['cms.pageLookup.getTypeInfo', 'pages.menuitem.getTypeInfo'], function ($type) {
-            if (starts_with($type, ['entry-', 'list-entry-'])) {
+            if (str_starts_with($type, 'entry-') || str_starts_with($type, 'list-entry-')) {
                 return BlueprintIndexer::instance()->getPageManagerTypeInfo($type);
             }
         });
 
         Event::listen(['cms.pageLookup.resolveItem', 'pages.menuitem.resolveItem'], function ($type, $item, $url, $theme) {
-            if (starts_with($type, ['entry-', 'list-entry-'])) {
+            if (str_starts_with($type, 'entry-') || str_starts_with($type, 'list-entry-')) {
                 return BlueprintIndexer::instance()->resolvePageManagerItem($type, $item, $url, $theme);
             }
         });

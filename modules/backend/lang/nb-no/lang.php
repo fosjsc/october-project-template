@@ -237,8 +237,6 @@
   'warnings' => [
     'tips' => 'Tips for systemkonfigurasjon',
     'tips_description' => 'Det er problemer du må være oppmerksom på for å konfigurere systemet riktig.',
-    'permissions' => 'Mappen :name eller dens undermapper kan ikke skrives på av PHP. Vennligst sjekk skrivetilganger på serveren.',
-    'extension' => 'PHP-extensionen :name er ikke installert..',
   ],
   'editor' => [],
   'tooltips' => [],

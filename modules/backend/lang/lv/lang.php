@@ -205,8 +205,6 @@
   'warnings' => [
     'tips' => 'Sistēmas konfigurācijas padomi',
     'tips_description' => 'Ir lietas, kurām vajadzētu pievērst uzmanību, lai konfigurētu sistēmu pareizi.',
-    'permissions' => 'Mape :name vai tās apakšmapes nav ierakstāmas ar PHP. Lūdzu iestatiet pareizas tiesības web serverim šajā mapē.',
-    'extension' => 'PHP paplašinājums :name nav instalēts. Lūdzu instalējiet šo papildinājumu un aktivizējiet to.',
   ],
   'editor' => [
     'enable_basic_autocompletion' => 'Iespējot pamata automātisko pabeigšanu (Ctrl+Space)',

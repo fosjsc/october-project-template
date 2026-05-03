@@ -33,7 +33,7 @@
   "By :name": "By :name",
   "The theme ':name' is not found.": "The theme ':name' is not found.",
   "Manage the front-end theme and customization options.": "Manage the front-end theme and customization options.",
-  "Frontend Theme": "Frontend Theme",
+  "Site Theme": "Site Theme",
   "Properties": "Properties",
   "Publish": "Publish",
   "Advanced": "Advanced",
@@ -137,5 +137,17 @@
   "Define a Snippet Partial": "Define a Snippet Partial",
   "Invalid drop-down option key: :key. Option keys can contain only digits, Latin letters and characters _ and -": "Invalid drop-down option key: :key. Option keys can contain only digits, Latin letters and characters _ and -",
   "The description is displayed in the snippet list in the editor when a snippet is added.": "The description is displayed in the snippet list in the editor when a snippet is added.",
-  "Details": "Details"
+  "Details": "Details",
+  "City": "City",
+  "Country": "Country",
+  "Page Path": "Page Path",
+  "Referral Domain": "Referral Domain",
+  "Pageviews": "Pageviews",
+  "Unique Visitors": "Unique Visitors",
+  "Traffic Information": "Traffic Information",
+  "Website Status": "Website Status",
+  "Website status information": "Website status information",
+  "Manage status": "Manage status",
+  "Maintenance": "Maintenance",
+  "Online": "Online"
 }

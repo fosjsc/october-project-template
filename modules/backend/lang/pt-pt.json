@@ -82,8 +82,8 @@
   "Create Admins": "Create Admins",
   "Moderate Admins": "Moderate Admins",
   "Manage account suspension and ban admin accounts": "Manage account suspension and ban admin accounts",
-  "Manage Roles": "Gerir Papéis",
-  "Manage Groups": "Grupos",
+  "Role Permissions": "Gerir Papéis",
+  "Team Groups": "Grupos",
   "Manage Other Admins": "Manage Other Admins",
   "Allow users to reset passwords and update emails.": "Allow users to reset passwords and update emails.",
   "Delete Admins": "Delete Admins",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Gerir utilizadores, grupos, e permissões de administração.",
   "Define permissions for administrators based on their role.": "Define permissions for administrators based on their role.",
   "Add administrators to groups used for notifications and features.": "Add administrators to groups used for notifications and features.",
-  "Customize Backend": "Personalização",
+  "Branding & Appearance": "Personalização",
   "Customize the administration area such as name, colors and logo.": "Personalizar detalhes da área administrativa, tais como título, cores e logo.",
   "Editor Settings": "Definições do Editor",
   "Change the global editor preferences.": "Gerir configurações globais do editor, como tamanho de fonte ou esquema de cores",
@@ -346,5 +346,9 @@
   "Show Ignored Columns": "Show Ignored Columns",
   "Auto Match Columns": "Auto Match Columns",
   "File not found": "File not found",
-  "There was no data supplied to export": "There was no data supplied to export"
+  "There was no data supplied to export": "There was no data supplied to export",
+  "Debug mode is enabled. This is not recommended for production installations.": "O modo de depuração está activo. Isto não é recomendado em abientes de produção.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "A extensão PHP :name não está instalada. Por favor, instale esta biblioteca para activar a extensão.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "A extensão :name é uma dependência mas não está instalada. Por favor instale esta extensão.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Diretoria :name ou suas subdiretorias não são graváveis pelo PHP. Por favor, defina permissões de escrita para o servidor nesta diretoria."
 }

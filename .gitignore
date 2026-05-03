@@ -1,6 +1,8 @@
 # Common
 composer.phar
 .DS_Store
+.vite
+.claude
 .idea
 .env
 .env.*.php
@@ -18,6 +20,7 @@ selenium.php
 composer.lock
 package-lock.json
 /node_modules
+/modules/system/node_modules
 _ide_helper.php
 .phpunit.result.cache
 nbproject
@@ -30,3 +33,4 @@ rr
 .rr.yaml
 
 /laradock
+/vendor_drm

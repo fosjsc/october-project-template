@@ -82,8 +82,8 @@
   "Create Admins": "Izveidot administratorus",
   "Moderate Admins": "Vidēji administratori",
   "Manage account suspension and ban admin accounts": "Pārvaldiet konta apturēšanu un bloķējiet administratora kontus",
-  "Manage Roles": "Pārvaldīt lomas",
-  "Manage Groups": "Grupas",
+  "Role Permissions": "Pārvaldīt lomas",
+  "Team Groups": "Grupas",
   "Manage Other Admins": "Pārvaldīt citus administratorus",
   "Allow users to reset passwords and update emails.": "Ļauj atiestatīt paroles un atjaunināt e-pastus",
   "Delete Admins": "Dzēst administratorus",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": "Formas ieraksts ar ID :id netika atrasts.",
   "Preview the Website": "Priekšskatīt web lapu",
   "Manage back-end administrator users, groups and permissions.": "Pārvaldiet back-end administrēšanas lietotājus, grupas un tiesības.",
-  "Customize Backend": "Back-end pielāgošana",
+  "Branding & Appearance": "Back-end pielāgošana",
   "Customize the administration area such as name, colors and logo.": "Pielāgojiet administratīvo vidi, piemēram nosaukumu, krāsas un logo.",
   "Editor Settings": "Koda labotāja iestatījumi",
   "Change the global editor preferences.": "Pielāgojiet sava kodu labotāja iestatījumus, tādus kā fontu izmēru un krāsu shēmu.",
@@ -325,5 +325,7 @@
   "Show Ignored Columns": "Parādīt ignorētās kolonnas",
   "Auto Match Columns": "Automātiski saskanēt kolonnas",
   "File not found": "Fails nav atrasts",
-  "There was no data supplied to export": "Dati eksportam netika sniegti"
+  "There was no data supplied to export": "Dati eksportam netika sniegti",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP paplašinājums :name nav instalēts. Lūdzu instalējiet šo papildinājumu un aktivizējiet to.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Mape :name vai tās apakšmapes nav ierakstāmas ar PHP. Lūdzu iestatiet pareizas tiesības web serverim šajā mapē."
 }

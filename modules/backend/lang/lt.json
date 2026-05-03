@@ -82,8 +82,8 @@
   "Create Admins": "Sukurti administratorius",
   "Moderate Admins": "Nuosaikūs administratoriai",
   "Manage account suspension and ban admin accounts": "Tvarkyti paskyros sustabdymą ir uždrausti administratoriaus paskyras",
-  "Manage Roles": "Valdykite vaidmenis",
-  "Manage Groups": "Tvarkyti Grupes",
+  "Role Permissions": "Valdykite vaidmenis",
+  "Team Groups": "Tvarkyti Grupes",
   "Manage Other Admins": "Tvarkyti kitus administratorius",
   "Allow users to reset passwords and update emails.": "Leidžia iš naujo nustatyti slaptažodžius ir atnaujinti el",
   "Delete Admins": "Ištrinti administratorius",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": "Formos įrašas su ID :id nebuvo rastas.",
   "Preview the Website": "Peržiūrėti svetainę",
   "Manage back-end administrator users, groups and permissions.": "Tvarkyti administracinius vartotojus, grupes ir prieigos leidimus.",
-  "Customize Backend": "Redaguoti posistemę",
+  "Branding & Appearance": "Redaguoti posistemę",
   "Customize the administration area such as name, colors and logo.": "Redaguoti adminsitracinės zonos pavadinimą, spalvas bei logotipą.",
   "Editor Settings": "Redaktoriaus nustatymai",
   "Change the global editor preferences.": "Redaguoti bendrąsias redaktoriaus savybes, tokias kaip šrifto dydis ir spalvų schema.",
@@ -325,5 +325,7 @@
   "Show Ignored Columns": "Rodyti ignoruotus stulpelius",
   "Auto Match Columns": "Automatiškai suderinti stulpelius",
   "File not found": "Failas nerastas",
-  "There was no data supplied to export": "Nėra pateiktų duomenų eksportavimui"
+  "There was no data supplied to export": "Nėra pateiktų duomenų eksportavimui",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "PHP priedas :name nėra įdiegtas. Prašome įdiegti ir aktyvuoti šį priedą.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Direktorija :name arba jos subdirektorijos nėra įrašomos naudojant PHP. Prašome nustatyti rašymo prieigą serveryje šiai direktorijai."
 }

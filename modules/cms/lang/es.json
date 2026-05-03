@@ -33,7 +33,7 @@
   "By :name": "Por :name",
   "The theme ':name' is not found.": "El tema ':name' no se encuentra.",
   "Manage the front-end theme and customization options.": "Previsualiza la lista de temas instalados y selecciona un tema activo.",
-  "Frontend Theme": "Tema para el Front-end",
+  "Site Theme": "Tema para el Front-end",
   "Properties": "Propiedades",
   "Publish": "Publicar",
   "Advanced": "Avanzado",
@@ -137,5 +137,6 @@
   "Define a Snippet Partial": "Definir parcial del fragmento",
   "Invalid drop-down option key: :key. Option keys can contain only digits, Latin letters and characters _ and -": "La clave de opción del desplegable no es válida : %s. Estas claves sólo pueden contener números, letras y los símbolos _ y -",
   "The description is displayed in the snippet list in the editor when a snippet is added.": "La descripción se muestra en la lista de fragmentos en el editor cuando se agrega un fragmento.",
-  "Details": "Detalles"
+  "Details": "Detalles",
+  "Frontend Theme": "Tema para el Front-end"
 }

@@ -82,8 +82,8 @@
   "Create Admins": "Criar Administradores",
   "Moderate Admins": "Moderar Administradores",
   "Manage account suspension and ban admin accounts": "Gerenciar suspensão de conta e banir contas de administradores",
-  "Manage Roles": "Gerenciar Funções",
-  "Manage Groups": "Grupos",
+  "Role Permissions": "Gerenciar Funções",
+  "Team Groups": "Grupos",
   "Manage Other Admins": "Gerenciar outros administradores",
   "Allow users to reset passwords and update emails.": "Permitir que os usuários redefinam senhas e atualizem e-mails.",
   "Delete Admins": "Excluir administradores",
@@ -300,7 +300,7 @@
   "Manage back-end administrator users, groups and permissions.": "Gerenciar administradores, grupos e permissões.",
   "Define permissions for administrators based on their role.": "Define permissions for administrators based on their role.",
   "Add administrators to groups used for notifications and features.": "Add administrators to groups used for notifications and features.",
-  "Customize Backend": "Personalização",
+  "Branding & Appearance": "Personalização",
   "Customize the administration area such as name, colors and logo.": "Personalizar detalhes da área administrativa, tais como título, cores e logo.",
   "Editor Settings": "Definições do Editor",
   "Change the global editor preferences.": "Gerenciar configurações do editor.",
@@ -346,5 +346,11 @@
   "Show Ignored Columns": "Show Ignored Columns",
   "Auto Match Columns": "Auto Match Columns",
   "File not found": "File not found",
-  "There was no data supplied to export": "There was no data supplied to export"
+  "There was no data supplied to export": "There was no data supplied to export",
+  "Debug mode is enabled. This is not recommended for production installations.": "O modo de depuração está ativado. Isso não é recomendado para instalações de produção.",
+  "The backend URL :name is too generic. Please set to something more unique.": "A URL do painel :name é muito genérica. Por favor, defina para algo mais exclusivo.",
+  "An account with a generic login :name was found. Please rename this administrator account.": "Uma conta com e login genérica :name foi encontrada. Por favor, renomeie esta conta de administrador.",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "A extensão PHP :name não está instalada. Por favor, instale esta biblioteca para ativar a extensão.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "O plugin :name é uma dependência, mas não está instalado. Por favor, instale este plugin.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Diretório :name ou seus subdiretórios não são graváveis pelo PHP. Por favor, defina permissões de escrita para o servidor neste diretório."
 }

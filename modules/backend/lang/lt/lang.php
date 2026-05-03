@@ -243,8 +243,6 @@
   'warnings' => [
     'tips' => 'Sistemos konfigūracijos patarimai',
     'tips_description' => 'Yra problemų į kurias turėtumėte atkreipti dėmesį norėdami sukonfigūruoti sistemą tinkamai.',
-    'permissions' => 'Direktorija :name arba jos subdirektorijos nėra įrašomos naudojant PHP. Prašome nustatyti rašymo prieigą serveryje šiai direktorijai.',
-    'extension' => 'PHP priedas :name nėra įdiegtas. Prašome įdiegti ir aktyvuoti šį priedą.',
   ],
   'editor' => [],
   'tooltips' => [],

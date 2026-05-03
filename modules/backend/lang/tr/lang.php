@@ -270,9 +270,6 @@
   'warnings' => [
     'tips' => 'Sistem ayar ipuçları',
     'tips_description' => 'Sistemin düzgün çalışabilmesi için dikkat etmeniz gereken sorunlar var.',
-    'permissions' => ':name dizini ve alt dizinleri PHP tarafından yazılabilir değil. Lütfen bu dizindeki webserver için gerekli yazma izinlerini verin.',
-    'extension' => ':name PHP eklentisi sistemde yüklü değil. Lütfen kütüphaneyi kurun ve eklentiyi aktifleştirin.',
-    'plugin_missing' => ':name isimli eklenti gerekli, fakat yüklenmemiş. Lütfen bu eklentiyi yükleyin.',
   ],
   'editor' => [],
   'tooltips' => [],

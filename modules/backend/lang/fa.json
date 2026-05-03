@@ -82,8 +82,8 @@
   "Create Admins": "ایجاد ادمین ها",
   "Moderate Admins": "مدیران معتدل",
   "Manage account suspension and ban admin accounts": "مدیریت تعلیق حساب و ممنوع کردن حساب های مدیریت",
-  "Manage Roles": "مدیریت نقش ها",
-  "Manage Groups": "گروه ها",
+  "Role Permissions": "مدیریت نقش ها",
+  "Team Groups": "گروه ها",
   "Manage Other Admins": "مدیریت سایر ادمین ها",
   "Allow users to reset passwords and update emails.": "امکان بازنشانی رمزهای عبور و به‌روزرسانی ایمیل‌ها را می‌دهد",
   "Delete Admins": "ادمین ها را حذف کنید",
@@ -288,7 +288,7 @@
   "Form record with an ID of :id could not be found.": "فرمی با مشخصه :id یافت نشد.",
   "Preview the Website": "پیش نمایش وب سایت",
   "Manage back-end administrator users, groups and permissions.": "مدیریت کاربران , گروه ها و دسترسی های مدیران.",
-  "Customize Backend": "شخصی سازی بخش مدیریت",
+  "Branding & Appearance": "شخصی سازی بخش مدیریت",
   "Customize the administration area such as name, colors and logo.": "شخصی سازی بخش مدیریت مانند نام، رنگ ها  و لوگو.",
   "Editor Settings": "تنظیمات ویرایشگر کد",
   "Change the global editor preferences.": "سفارشی سازی ویرایشگر کد، مانند اندازه فونت و رنگ بندی آن.",
@@ -325,5 +325,8 @@
   "Show Ignored Columns": "نمایش ستون های نادیده گرفته شده",
   "Auto Match Columns": "مطابقت خودکار ستون ها",
   "File not found": "فایل یافت نشد",
-  "There was no data supplied to export": "داده ای جهت ایجاد خروجی وجود ندارد"
+  "There was no data supplied to export": "داده ای جهت ایجاد خروجی وجود ندارد",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "افزونه PHP با نام :name نصب نشده است. لطفن این افزونه را نصب کرده و فعال نمایید.",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "افزونه :name مورد نیاز است ولی نصب نشده. لطفا این افزونه را نصب کنید.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "پوشه :name یا یکی از زیر پوشه های آن برای PHP قابل نوشتن نیستند. لطفا تنظیمات این پوشه را تعییر دهید."
 }

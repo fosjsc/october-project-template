@@ -12,8 +12,11 @@ use Cms\Classes\ThemeManager;
 use Cms\Classes\CmsObjectCache;
 use Cms\Widgets\PageLookup;
 use Cms\Widgets\SnippetLookup;
+<<<<<<< HEAD
 use Cms\Classes\CmsReportDataSource;
 use Cms\Classes\CmsStatusDataSource;
+=======
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
 use Backend\Models\UserRole;
 use Backend\Classes\Controller as BackendController;
 use System\Classes\SettingsManager;
@@ -42,9 +45,14 @@ class ServiceProvider extends ModuleServiceProvider
         CmsObjectCache::flush();
 
         // Backend specific
+<<<<<<< HEAD
         if ($this->app->runningInBackend()) {
             $this->registerPageLookupInstance();
             $this->registerDashboardDatasource();
+=======
+        if ($this->app->runningInBackend() || $this->app->runningInOctane()) {
+            $this->registerPageLookupInstance();
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
         }
     }
 
@@ -68,7 +76,10 @@ class ServiceProvider extends ModuleServiceProvider
         $this->app->singleton('cms.components', \Cms\Classes\ComponentManager::class);
         $this->app->singleton('cms.snippets', \Cms\Classes\SnippetManager::class);
         $this->app->singleton('cms.themes', \Cms\Classes\ThemeManager::class);
+<<<<<<< HEAD
         $this->app->singleton('cms.demos.traffic', \Cms\Classes\CmsDemoTrafficDataGenerator::class);
+=======
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
     }
 
     /**
@@ -76,6 +87,7 @@ class ServiceProvider extends ModuleServiceProvider
      */
     protected function registerConsole()
     {
+<<<<<<< HEAD
         $this->registerConsoleCommand('theme.install', \Cms\Console\ThemeInstall::class);
         $this->registerConsoleCommand('theme.remove', \Cms\Console\ThemeRemove::class);
         $this->registerConsoleCommand('theme.list', \Cms\Console\ThemeList::class);
@@ -85,6 +97,9 @@ class ServiceProvider extends ModuleServiceProvider
         $this->registerConsoleCommand('theme.seed', \Cms\Console\ThemeSeed::class);
         $this->registerConsoleCommand('theme.clear', \Cms\Console\ThemeClear::class);
         $this->registerConsoleCommand('theme.cache', \Cms\Console\ThemeCache::class);
+=======
+        $this->discoverConsoleCommands('cms');
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
     }
 
     /**
@@ -136,6 +151,10 @@ class ServiceProvider extends ModuleServiceProvider
     {
         Event::listen('site.changed', function() {
             Theme::resetCache();
+<<<<<<< HEAD
+=======
+            ThemeManager::instance()->bootAll();
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
         });
     }
 
@@ -145,12 +164,16 @@ class ServiceProvider extends ModuleServiceProvider
     protected function registerThemeTranslations()
     {
         $this->callAfterResolving('translator', function() {
+<<<<<<< HEAD
             if ($this->app->runningInBackend()) {
                 ThemeManager::instance()->bootAllBackend();
             }
             else {
                 ThemeManager::instance()->bootAllFrontend();
             }
+=======
+            ThemeManager::instance()->bootAll();
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
         });
     }
 
@@ -254,6 +277,7 @@ class ServiceProvider extends ModuleServiceProvider
                 'tab' => 'Themes',
                 'order' => 400
             ],
+<<<<<<< HEAD
 
             // Internal Traffic Statistics
             // @vuedashboard
@@ -262,6 +286,8 @@ class ServiceProvider extends ModuleServiceProvider
             //     'tab' => 'Internal Traffic Statistics',
             //     'order' => 1000
             // ]
+=======
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
         ];
     }
 
@@ -282,10 +308,17 @@ class ServiceProvider extends ModuleServiceProvider
     {
         return [
             'filters' => [
+<<<<<<< HEAD
                 'link' => [\Cms\Classes\PageManager::class, 'url'],
             ],
             'functions' => [
                 'link' => [\Cms\Classes\PageManager::class, 'resolve'],
+=======
+                'link' => [\Cms\Classes\PageManager::class, 'url', false],
+            ],
+            'functions' => [
+                'link' => [\Cms\Classes\PageManager::class, 'resolve', false],
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
             ]
         ];
     }
@@ -297,6 +330,7 @@ class ServiceProvider extends ModuleServiceProvider
     {
         return [
             'theme' => [
+<<<<<<< HEAD
                 'label' => 'Frontend Theme',
                 'description' => 'Manage the front-end theme and customization options.',
                 'category' => SettingsManager::CATEGORY_CMS,
@@ -304,6 +338,15 @@ class ServiceProvider extends ModuleServiceProvider
                 'url' => Backend::url('cms/themes'),
                 'permissions' => ['cms.themes', 'cms.theme_customize'],
                 'order' => 200
+=======
+                'label' => 'Site Theme',
+                'description' => 'Manage the front-end theme and customization options.',
+                'category' => SettingsManager::CATEGORY_CMS,
+                'icon' => 'ph ph-monitor',
+                'url' => Backend::url('cms/themes'),
+                'permissions' => ['cms.themes', 'cms.theme_customize'],
+                'order' => 300
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
             ],
             'maintenance_settings' => [
                 'label' => 'Maintenance Mode',
@@ -312,7 +355,11 @@ class ServiceProvider extends ModuleServiceProvider
                 'icon' => 'icon-power',
                 'class' => \Cms\Models\MaintenanceSetting::class,
                 'permissions' => ['cms.maintenance_mode'],
+<<<<<<< HEAD
                 'order' => 300
+=======
+                'order' => 400
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
             ],
             'theme_logs' => [
                 'label' => 'cms::lang.theme_log.menu_label',
@@ -324,6 +371,7 @@ class ServiceProvider extends ModuleServiceProvider
                 'order' => 910,
                 'keywords' => 'theme change log'
             ],
+<<<<<<< HEAD
             // @vuedashboard
             // 'internal_traffic_statistics' => [
             //     'label' => 'cms::lang.internal_traffic_statistics.label',
@@ -335,6 +383,8 @@ class ServiceProvider extends ModuleServiceProvider
             //     'permissions' => ['cms.internal_traffic_statistics'],
             //     'order' => 1000
             // ],
+=======
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
         ];
     }
 
@@ -389,6 +439,7 @@ class ServiceProvider extends ModuleServiceProvider
     }
 
     /**
+<<<<<<< HEAD
      * registerDashboardDatasource
      */
     protected function registerDashboardDatasource()
@@ -407,6 +458,8 @@ class ServiceProvider extends ModuleServiceProvider
     }
 
     /**
+=======
+>>>>>>> 1d17f1e744cde30c5684b950627191bdb2a3fe41
      * registerRenamedClasses
      */
     protected function registerRenamedClasses()

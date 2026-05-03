@@ -48,7 +48,7 @@
   "Preview": "プレビュー",
   "Unsaved": "未保存",
   "put the draft notes here": "ここに下書きメモを入れる",
-  "Top level": "トップレベル",
+  "Top Level": "トップレベル",
   "Draft name: draft notes": "ドラフト名: ドラフトノート",
   "Title": "題名",
   "Publish Date": "発行日",
@@ -89,5 +89,12 @@
   "All :name Items": "すべての:name エントリ",
   "Update Existing Records": "既存のレコードを更新する",
   "Check this box to update records that match the same ID, title or slug.": "同じ ID、タイトル、またはスラッグに一致するレコードを更新するには、このボックスをチェックします。",
-  "Copy": "コピー"
+  "Copy": "コピー",
+  "App": "アプリ",
+  "Blueprints": "設計図",
+  "App Blueprint": "アプリブループリント",
+  "Theme Blueprint": "テーマブループリント",
+  "Reset Structure": "構造をリセット",
+  "Structure has been reset": "構造がリセットされました",
+  "Content": "コンテンツ"
 }

@@ -82,8 +82,8 @@
   "Create Admins": "Buat Admin",
   "Moderate Admins": "Moderasi Admin",
   "Manage account suspension and ban admin accounts": "Kelola suspensi akun dan blokir akun admin",
-  "Manage Roles": "Kelola Peran",
-  "Manage Groups": "Grup",
+  "Role Permissions": "Kelola Peran",
+  "Team Groups": "Grup",
   "Manage Other Admins": "Kelola Admin Lain",
   "Allow users to reset passwords and update emails.": "Izinkan pengguna untuk mengatur ulang kata sandi dan memperbarui email",
   "Delete Admins": "Hapus Admin",
@@ -285,7 +285,7 @@
   "Form record with an ID of :id could not be found.": "Form untuk data dengan ID :id tidak ditemukan.",
   "Preview the Website": "Preview situs",
   "Manage back-end administrator users, groups and permissions.": "Kelola pengguna administrator back-end, grup, dan perizinan.",
-  "Customize Backend": "Penyesuaian back-end",
+  "Branding & Appearance": "Penyesuaian back-end",
   "Customize the administration area such as name, colors and logo.": "Penyesuaian area administrasi seperti nama, warna dan logo.",
   "Editor Settings": "Pengaturan Editor",
   "Change the global editor preferences.": "Pengaturan Editor yang sesuai dengan keinginan Anda, seperti ukuran huruf dan skema warna.",
@@ -298,5 +298,7 @@
   "Use checkboxes to select columns you want to see in the list. You can change position of columns by dragging them up or down.": "Gunakan checkbox untuk memilih kolom yang ingin ditampilkan pada tabel. Anda dapat mengubah posisi kolom dengan cara menarik ke atas ke bawah.",
   "Records Per Page": "Data per halaman",
   "Select the number of records per page to display. Please note that high number of records on a single page can reduce performance.": "Pilih jumlah data per halaman untuk ditampilkan. Mohon diingat, jumlah data yang banyak dalam satu halaman dapat menurunkan performa.",
-  "Add Selected": "Tambah terpilih"
+  "Add Selected": "Tambah terpilih",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "Ekstensi PHP :name tidak terpasang. Silakan instalasi modul ini dan aktifkan ekstensi.",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "Direktori :name atau direktori di bawahnya tidak dapat ditulis oleh PHP. Silakan atur hak akses webserver yang sesuai pada direktori ini."
 }

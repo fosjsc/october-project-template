@@ -321,12 +321,6 @@
   'warnings' => [
     'tips' => '系统配置提示',
     'tips_description' => '为了正确配置系统，您需要注意一些问题。',
-    'permissions' => '目录 :name 或其子目录对于 PHP 不可写。 请为该目录的网络服务器设置相应的权限。',
-    'extension' => 'PHP 扩展名 :name 未安装。 请安装这个库并激活扩展。',
-    'plugin_missing' => '插件 :name 是一个依赖项，但尚未安装。 请安装这个插件。',
-    'debug' => '调试模式已启用。 不建议将其用于生产安装。',
-    'backend_uri' => '后端URL :name 太普通。请设置为更特殊的内容。',
-    'backend_login' => '找到具有通用登录名：name 的帐户。请重命名此管理员帐户。',
   ],
   'editor' => [
     'toolbar_buttons_presets' => [

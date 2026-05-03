@@ -82,8 +82,8 @@
   "Create Admins": "สร้างผู้ดูแลระบบ",
   "Moderate Admins": "ผู้ดูแลระบบระดับปานกลาง",
   "Manage account suspension and ban admin accounts": "จัดการระงับบัญชีและแบนบัญชีผู้ดูแลระบบ",
-  "Manage Roles": "จัดการบทบาท",
-  "Manage Groups": "จัดการกลุ่ม",
+  "Role Permissions": "จัดการบทบาท",
+  "Team Groups": "จัดการกลุ่ม",
   "Manage Other Admins": "จัดการผู้ดูแลระบบคนอื่น",
   "Allow users to reset passwords and update emails.": "อนุญาตให้รีเซ็ตรหัสผ่านและอัปเดตอีเมล",
   "Delete Admins": "ลบผู้ดูแลระบบ",
@@ -286,7 +286,7 @@
   ":name Deleted": "ลบ :name แล้ว",
   "Preview the Website": "ดูตัวอย่างเว็บไซต์",
   "Manage back-end administrator users, groups and permissions.": "กำหนด ผู้ใช้ กลุ่ม และสิทธิ์การใช้งาน ของหน้าเว็บหลังบ้าน",
-  "Customize Backend": "ปรับแก้หน้าเว็บหลังบ้าน",
+  "Branding & Appearance": "ปรับแก้หน้าเว็บหลังบ้าน",
   "Customize the administration area such as name, colors and logo.": "ปรับแก้ส่วนจัดการระบบ เช่น ชื่อ สี และโลโก้",
   "Editor Settings": "การตั้งค่าตัวแก้ไข",
   "Change the global editor preferences.": "ปรับแก้ตามความชอบตัวแก้ไข เช่น ขนาดฟอนท์ และแผนผังสี",
@@ -300,5 +300,8 @@
   "Select the number of records per page to display. Please note that high number of records on a single page can reduce performance.": "เลือกจำนวนข้อมูลต่อหน้าในการแสดงผล การเลือกจำนวนต่อหน้ามากๆทำให้ประสิทธิภาพลดลงได้",
   "Add Selected": "เพิ่มรายการที่เลือก",
   "Created": "สร้างแล้ว",
-  "Updated": "อัพเดทแล้ว"
+  "Updated": "อัพเดทแล้ว",
+  "The PHP extension :name is not installed. Please install this library and activate the extension.": "ส่วนต่อเติม PHP :name ไม่ถูกติดตั้ง กรุณาติดตั้งส่วนต่อเติมนี้และเปิดการใช้งานส่วนต่อเติม",
+  "The plugin :name is a dependency but is not installed. Please install this plugin.": "ปลั๊กอิน :name เป็น dependency แต่ไม่ถูกติดตั้ง กรุณาติดตั้งปลั๊กอินนี้",
+  "Directory :name or its subdirectories is not writable for PHP. Please set corresponding permissions for the webserver on this directory.": "โฟลเดอร์ :name หรือโฟลเดอร์ย่อยของมัน ไม่สามารถเขียนได้โดย PHP กรุณาตั้งสิทธิ์ที่สอดคล้องกับเว็บเซิร์ฟเวอร์ที่โฟลเดอร์นี้"
 }

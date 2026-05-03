@@ -315,13 +315,7 @@
   'warnings' => [
     'tips' => 'Dicas de configuração do sistema',
     'tips_description' => 'Há itens que demandam atenção para configurar o sistema corretamente.',
-    'permissions' => 'Diretório :name ou seus subdiretórios não são graváveis pelo PHP. Por favor, defina permissões de escrita para o servidor neste diretório.',
-    'extension' => 'A extensão PHP :name não está instalada. Por favor, instale esta biblioteca para ativar a extensão.',
-    'plugin_missing' => 'O plugin :name é uma dependência, mas não está instalado. Por favor, instale este plugin.',
-    'debug' => 'O modo de depuração está ativado. Isso não é recomendado para instalações de produção.',
     'decompileBackendAssets' => 'Os assets no Backend estão atualmente descompilados. Isso não é recomendado para instalações de produção.',
-    'backend_uri' => 'A URL do painel :name é muito genérica. Por favor, defina para algo mais exclusivo.',
-    'backend_login' => 'Uma conta com e login genérica :name foi encontrada. Por favor, renomeie esta conta de administrador.',
   ],
   'editor' => [
     'preview' => 'Prévia',

@@ -181,8 +181,6 @@
   'warnings' => [
     'tips' => 'Tips pengaturan sistem',
     'tips_description' => 'Ada isu yang harus Anda perhatikan untuk mengatur sistem dengan tepat.',
-    'permissions' => 'Direktori :name atau direktori di bawahnya tidak dapat ditulis oleh PHP. Silakan atur hak akses webserver yang sesuai pada direktori ini.',
-    'extension' => 'Ekstensi PHP :name tidak terpasang. Silakan instalasi modul ini dan aktifkan ekstensi.',
   ],
   'editor' => [],
   'tooltips' => [],

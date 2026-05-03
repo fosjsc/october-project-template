@@ -292,10 +292,6 @@
   'warnings' => [
     'tips' => 'Nasveti glede nastavitev sistema',
     'tips_description' => 'Za pravilno nastavitev sistema morate biti pozorni na določene podrobnosti.',
-    'permissions' => 'PHP ne more pisati v mapo :name in njene podmape. Prosimo, nastavite spletnemu strežniku ustrezna dovoljenja za to mapo.',
-    'extension' => 'PHP razširitev (extension) :name ni nameščena. Prosimo, namestite ustrezno knjižnico in aktivirajte razširitev.',
-    'plugin_missing' => 'Za delovanje je potreben vtičnik :name, vendar ni nameščen. Prosimo, namestite ta vtičnik.',
-    'debug' => 'Način za odpravljanje napak je omogočen. Ta način ni priporočljiv za produkcijsko okolje.',
     'decompileBackendAssets' => 'Oblikovne datoteke (CSS, JavaSrcipt) v administraciji so trenutno ne-stisnjene. To ni priporočljivo za produkcijsko okolje.',
   ],
   'editor' => [

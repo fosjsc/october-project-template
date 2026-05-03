@@ -229,8 +229,6 @@
   'warnings' => [
     'tips' => 'Suggerimenti per la configurazione del sistema',
     'tips_description' => 'Ci sono elementi a cui è necessario prestare attenzione al fine di configurare il sistema in maniera corretta.',
-    'permissions' => 'La cartella :name o le sue sottocartelle non sono scrivibili da PHP. Imposta le corrette autorizzazioni per il server web su questa cartella.',
-    'extension' => 'L\'estensione di PHP :name non è installata. Installa questa libreria ed attiva l\'estensione.',
   ],
   'editor' => [],
   'tooltips' => [],
