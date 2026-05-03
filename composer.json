@@ -7,7 +7,6 @@
     "require": {
         "php": "^8.3",
         "october/rain": "^4.2",
-        "october/all": "^4.2",
         "laravel/framework": "^12.0",
         "league/flysystem-aws-s3-v3": "^3.0",
         "fos/foundation-plugin": "*",
@@ -21,11 +20,7 @@
         "fos/crm-plugin": "*",
         "fos/passport-plugin": "*",
         "fos/mrp-plugin": "*",
-        "fos/fcmas-plugin": "*",
-        "fos/fdcim-plugin": "*",
-        "fos/chat-plugin": "*",
-        "nevadskiy/laravel-tree": "^0.6.1",
-        "kalnoy/nestedset": "^6.0"
+        "fos/chat-plugin": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0",
@@ -58,7 +53,8 @@
     "config": {
         "preferred-install": "dist",
         "allow-plugins": {
-            "composer/installers": true
+            "composer/installers": true,
+            "php-http/discovery": true
         },
         "audit": {
             "block-insecure": false
@@ -72,15 +68,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
-        "octobercms": {
-            "type": "composer",
-            "url": "https://gateway.octobercms.com",
-            "only": [
-                "october/*",
-                "*-plugin",
-                "*-theme"
-            ]
-        },
         "fos/foundation-plugin": {
             "type": "path",
             "url": "plugins/fos/foundation"
@@ -124,14 +111,6 @@
         "fos/mrp-plugin": {
             "type": "path",
             "url": "plugins/fos/mrp"
-        },
-        "fos/fcmas-plugin": {
-            "type": "path",
-            "url": "plugins/fos/fcmas"
-        },
-        "fos/fdcim-plugin": {
-            "type": "path",
-            "url": "plugins/fos/fdcim"
         },
         "fos/chat-plugin": {
             "type": "path",
