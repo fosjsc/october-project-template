@@ -5,6 +5,9 @@
 [submodule "plugins/fos/agile"]
 	path = plugins/fos/agile
 	url = git@github.com:fosjsc/agile.git
+[submodule "plugins/fos/chat"]
+	path = plugins/fos/chat
+	url = git@github.com:fosjsc/chat.git
 [submodule "plugins/fos/crm"]
 	path = plugins/fos/crm
 	url = git@github.com:fosjsc/crm.git
@@ -20,6 +23,9 @@
 [submodule "plugins/fos/manual"]
 	path = plugins/fos/manual
 	url = git@github.com:fosjsc/manual.git
+[submodule "plugins/fos/mrp"]
+	path = plugins/fos/mrp
+	url = git@github.com:fosjsc/mrp.git
 [submodule "plugins/fos/notify"]
 	path = plugins/fos/notify
 	url = git@github.com:fosjsc/notify.git
@@ -35,6 +41,3 @@
 [submodule "themes/hdsc"]
 	path = themes/hdsc
 	url = git@github.com:silver-arrow-software/theme-hdsc.git
-[submodule "plugins/fos/mrp"]
-	path = plugins/fos/mrp
-	url = git@github.com:fosjsc/mrp.git
